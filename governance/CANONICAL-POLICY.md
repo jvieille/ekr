@@ -4,7 +4,7 @@
 
 This policy explains how public repository contributions may influence EKR without turning GitHub activity into an alternative canonical authority.
 
-It is a **public governance policy**. Internal control material used to review claims, boundaries and publication decisions is not reproduced here.
+It is a **public governance policy**. Non-public review material used to assess claims, boundaries and publication decisions is not reproduced here.
 
 ## 2. Current canonical public anchor
 
@@ -34,10 +34,10 @@ A proposal is treated as canonical-impact when accepting it would materially cha
 
 - a canonical EKR distinction;
 - an existing material public claim;
-- the public/reserved publication boundary; or
+- the current public scope or publication boundary; or
 - an existing canonical anchor.
 
-A proposal may also trigger controlled claim review when it introduces a materially new public proposition rather than supporting or clarifying an already controlled position.
+A proposal may also trigger separate claim review when it introduces a materially new public proposition rather than supporting or clarifying an already controlled position.
 
 ## 5. Public proposal, separate acceptance path
 
@@ -49,7 +49,7 @@ Canonical-impact proposals may be raised and debated publicly. They cannot be ac
 - an ordinary pull-request merge; or
 - release of a Guidance document alone.
 
-At launch, canonical-impact acceptance is the responsibility of the **founding canonical steward, Jean Vieille, under controlled EKR governance**.
+Under the current governance, canonical-impact acceptance is the responsibility of the **canonical steward, currently Jean Vieille**.
 
 ## 6. Public decision records
 
@@ -63,11 +63,11 @@ A public decision record identifies, as applicable:
 - the affected canonical/public artefact;
 - the effective version or release.
 
-The record need not publish confidential internal review material or reserved implementation detail.
+The record need not publish confidential or non-public review material, protected implementation detail, or information that cannot lawfully be disclosed.
 
 ## 7. When a canonical change becomes effective
 
-A private internal control change cannot silently redefine public EKR.
+Non-public control or review material cannot silently redefine public EKR.
 
 A change to an existing canonical anchor becomes effective only when the affected canonical artefact is deliberately issued as a new controlled version or release. Until then, the currently published anchor remains authoritative.
 
@@ -77,6 +77,6 @@ Released Guidance may interpret and operationalise canonical EKR distinctions at
 
 If Guidance development reveals a need to alter a canonical proposition, that question is escalated through this policy rather than being resolved implicitly inside the Guidance text.
 
-## 9. Public/reserved boundary
+## 9. Public-scope boundary
 
-The public repository does not relax separate publication, protection, confidentiality, security or intellectual-property gates. Public discussion may identify an architectural question without authorising disclosure of protected or unpublished implementation material.
+The public repository does not override separate decisions or controls governing publication, protection, confidentiality, security or intellectual property. Public discussion may identify an architectural question without authorising disclosure of protected or unpublished implementation material.

@@ -77,11 +77,11 @@ Implementation cases enter the repository with **Example** status unless explici
 
 State the context, objectives, constraints, observed outcome and limitations. Avoid generalising from a single case without evidence.
 
-## 5. Public/reserved, security and IP boundary
+## 5. Public scope, security and intellectual-property boundary
 
 Only contribute material that you are authorised to disclose publicly.
 
-Do **not** submit confidential, classified, export-controlled, proprietary, personal or third-party material that you do not have the right to publish. Do not use the repository to disclose unpublished implementation mechanisms or other material that is subject to a separate protection or publication gate.
+Do **not** submit confidential, classified, export-controlled, proprietary, personal-data or third-party material that you do not have the right to publish. Do not use the repository to disclose unpublished implementation mechanisms or other material that has not been authorised for public release under the applicable publication, protection, security or intellectual-property process.
 
 If a useful contribution depends on information that cannot be disclosed, describe the public architectural question without exposing the protected material.
 
@@ -89,7 +89,7 @@ If a useful contribution depends on information that cannot be disclosed, descri
 
 The repository uses these public statuses: **Canonical, Released Guidance, Draft Guidance, Proposal, Example, Discussion**.
 
-A contribution does not acquire EKR authority through popularity, acceptance for investigation or merge alone. If a proposal would materially affect a canonical EKR distinction, material public claim, public/reserved boundary or canonical anchor, it is escalated under the public [Canonicality Policy](governance/CANONICAL-POLICY.md).
+A contribution does not acquire EKR authority through popularity, acceptance for investigation or merge alone. If a proposal would materially affect a canonical EKR distinction, material public claim, current public scope or publication boundary, or canonical anchor, it is escalated under the public [Canonicality Policy](governance/CANONICAL-POLICY.md).
 
 ## 7. Contribution lifecycle
 

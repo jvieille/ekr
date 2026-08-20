@@ -1,0 +1,250 @@
+[1mdiff --git a/.gitattributes b/.gitattributes[m
+[1mindex 94f480d..6313b56 100644[m
+[1m--- a/.gitattributes[m
+[1m+++ b/.gitattributes[m
+[36m@@ -1 +1 @@[m
+[31m-* text=auto eol=lf[m
+\ No newline at end of file[m
+[32m+[m[32m* text=auto eol=lf[m
+[1mdiff --git a/CONTRIBUTING.md b/CONTRIBUTING.md[m
+[1mindex c9d1cb1..7ff4143 100644[m
+[1m--- a/CONTRIBUTING.md[m
+[1m+++ b/CONTRIBUTING.md[m
+[36m@@ -77,11 +77,11 @@[m [mImplementation cases enter the repository with **Example** status unless explici[m
+ [m
+ State the context, objectives, constraints, observed outcome and limitations. Avoid generalising from a single case without evidence.[m
+ [m
+[31m-## 5. Public/reserved, security and IP boundary[m
+[32m+[m[32m## 5. Public scope, security and intellectual-property boundary[m
+ [m
+ Only contribute material that you are authorised to disclose publicly.[m
+ [m
+[31m-Do **not** submit confidential, classified, export-controlled, proprietary, personal or third-party material that you do not have the right to publish. Do not use the repository to disclose unpublished implementation mechanisms or other material that is subject to a separate protection or publication gate.[m
+[32m+[m[32mDo **not** submit confidential, classified, export-controlled, proprietary, personal-data or third-party material that you do not have the right to publish. Do not use the repository to disclose unpublished implementation mechanisms or other material that has not been authorised for public release under the applicable publication, protection, security or intellectual-property process.[m
+ [m
+ If a useful contribution depends on information that cannot be disclosed, describe the public architectural question without exposing the protected material.[m
+ [m
+[36m@@ -89,7 +89,7 @@[m [mIf a useful contribution depends on information that cannot be disclosed, descri[m
+ [m
+ The repository uses these public statuses: **Canonical, Released Guidance, Draft Guidance, Proposal, Example, Discussion**.[m
+ [m
+[31m-A contribution does not acquire EKR authority through popularity, acceptance for investigation or merge alone. If a proposal would materially affect a canonical EKR distinction, material public claim, public/reserved boundary or canonical anchor, it is escalated under the public [Canonicality Policy](governance/CANONICAL-POLICY.md).[m
+[32m+[m[32mA contribution does not acquire EKR authority through popularity, acceptance for investigation or merge alone. If a proposal would materially affect a canonical EKR distinction, material public claim, current public scope or publication boundary, or canonical anchor, it is escalated under the public [Canonicality Policy](governance/CANONICAL-POLICY.md).[m
+ [m
+ ## 7. Contribution lifecycle[m
+ [m
+[1mdiff --git a/GOVERNANCE.md b/GOVERNANCE.md[m
+[1mindex 82c2e8a..3519ed1 100644[m
+[1m--- a/GOVERNANCE.md[m
+[1m+++ b/GOVERNANCE.md[m
+[36m@@ -2,13 +2,15 @@[m
+ [m
+ ## 1. Purpose[m
+ [m
+[31m-This document defines the public governance of the EKR repository: artefact statuses, decision rights, contribution progression, escalation and release logic.[m
+[32m+[m[32mThis document defines the current public governance of the EKR repository: artefact statuses, decision rights, contribution progression, escalation and release logic.[m
+ [m
+[31m-The repository is a public development workspace. It is not the canonical Working Definition and it does not replace controlled EKR claim or publication governance.[m
+[32m+[m[32mThe repository is a public development workspace. It is not the canonical Working Definition and it does not replace the separate review and release process for canonical EKR claims and publications.[m
+[32m+[m
+[32m+[m[32mThis governance may evolve as the EKR development process matures. Changes are made explicitly through the repository and remain subject to the canonical-impact rules defined below; a governance edit does not by itself redefine canonical EKR.[m
+ [m
+ ## 2. Three distinct forms of authority[m
+ [m
+[31m-EKR launch governance distinguishes three forms of authority even when the same person may temporarily exercise more than one role.[m
+[32m+[m[32mEKR repository governance distinguishes three forms of authority even when the same person may exercise more than one role.[m
+ [m
+ ### Public discussion authority[m
+ [m
+[36m@@ -16,11 +18,11 @@[m [mAnyone participating through Discussions, Issues or pull requests may question,[m
+ [m
+ ### Repository-maintainer authority[m
+ [m
+[31m-The maintainer manages repository housekeeping, navigation, labels, contribution triage and draft artefacts. The maintainer may classify contributions, request evidence, close duplicates and merge changes that remain within the existing controlled boundary.[m
+[32m+[m[32mThe maintainer manages repository housekeeping, navigation, labels, contribution triage and draft artefacts. The maintainer may classify contributions, request evidence, close duplicates and merge changes that remain within the current public EKR boundary and do not create a new material public claim.[m
+ [m
+ ### Canonical EKR authority[m
+ [m
+[31m-Canonical-impact changes follow a separate controlled path. At launch, the founding canonical steward is **Jean Vieille**. Canonical authority is not delegated to issue popularity, contributor count, maintainer preference or an ordinary pull-request merge.[m
+[32m+[m[32mCanonical-impact changes follow a separate governed path. Under the current governance, the canonical steward is **Jean Vieille**. Canonical authority is not delegated to issue popularity, contributor count, maintainer preference or an ordinary pull-request merge.[m
+ [m
+ ## 3. Artefact status model[m
+ [m
+[36m@@ -28,7 +30,7 @@[m [mCanonical-impact changes follow a separate controlled path. At launch, the found[m
+ |---|---|---|[m
+ | **Canonical** | Published, versioned and formally designated as a canonical EKR anchor. | Working Definition V0.1 and future explicitly designated canonical anchors. |[m
+ | **Released Guidance** | Versioned guidance accepted for public use at a stated maturity. It remains evolvable and is not a standard or certification scheme. | EKR Architectural Guidance release. |[m
+[31m-| **Draft Guidance** | Guidance under controlled development; content may change materially. | Guidance seed and working drafts. |[m
+[32m+[m[32m| **Draft Guidance** | Guidance under governed development; content may change materially. | Guidance seed and working drafts. |[m
+ | **Proposal** | Structured suggestion, alternative, pattern or change request submitted for evaluation. | Issue or proposal artefact. |[m
+ | **Example** | Non-normative illustration, implementation experience or case used to test guidance. | Contributed example or case. |[m
+ | **Discussion** | Conversation, question, challenge or exploration with no acquired EKR status. | GitHub Discussion. |[m
+[36m@@ -47,24 +49,26 @@[m [mThis is not an automatic promotion pipeline.[m
+ - A Released Guidance document does not become Canonical merely by being released.[m
+ - Canonical change follows the separate escalation path described below.[m
+ [m
+[31m-## 5. Decision rights at launch[m
+[32m+[m[32m## 5. Decision rights[m
+[32m+[m
+[32m+[m[32mThe table below states the **current** decision authorities. These may evolve through explicit governance changes, subject to the same canonical-impact safeguards.[m
+ [m
+[31m-| Decision class | Launch authority | Rule |[m
+[32m+[m[32m| Decision class | Current authority | Rule |[m
+ |---|---|---|[m
+ | Repository housekeeping, labels and navigation | Maintainer | May be changed directly if conceptual meaning or artefact status is not altered. |[m
+ | Discussion triage and issue classification | Maintainer | May classify, request evidence, close duplicates or convert/link a Discussion to an Issue; this does not decide canonical truth. |[m
+[31m-| Draft Guidance wording | Maintainer under the current controlled EKR sources | May be merged after review when it stays within the existing boundary and creates no new material public claim. |[m
+[31m-| New material public claim | Controlled claim review | Requires a registered claim/classification or an explicit determination that the text is supporting detail rather than a new material proposition. |[m
+[31m-| Canonical-impact or canonical-anchor change | Founding canonical steward under controlled EKR governance | May be proposed publicly but cannot be accepted through ordinary popularity or PR merge. Accepted public-impact decisions require a public decision record; an anchor change requires a new controlled version/release. |[m
+[31m-| Material subject to a separate publication/protection gate | Separate governance | Outside the launch repository's decision authority until the applicable gate is closed. |[m
+[32m+[m[32m| Draft Guidance wording | Maintainer, subject to current EKR governance | May be merged after review when it remains within the current public EKR boundary and creates no new material public claim. |[m
+[32m+[m[32m| New material public claim | Separate claim review | Requires explicit review and classification before it is published as an EKR position. Text that only supports or clarifies an existing controlled position may be treated as supporting detail. |[m
+[32m+[m[32m| Canonical-impact or canonical-anchor change | Canonical steward, currently Jean Vieille | May be proposed publicly but cannot be accepted through ordinary popularity or PR merge. Accepted public-impact decisions require a public decision record; an anchor change requires a new controlled version or release. |[m
+[32m+[m[32m| Matter outside the repository's current public scope | Applicable governance outside this repository | The repository cannot make such material public or give it EKR status. It may enter the repository's scope only after the applicable publication, protection, security, intellectual-property or other governance decision has authorised public treatment. |[m
+ [m
+ ## 6. Canonical-impact escalation[m
+ [m
+[31m-A contribution is escalated when it would materially alter a canonical EKR distinction, an existing material claim, the public/reserved boundary, or an existing canonical anchor.[m
+[32m+[m[32mA contribution is escalated when it would materially alter a canonical EKR distinction, an existing material public claim, the current public scope or publication boundary, or an existing canonical anchor.[m
+ [m
+[31m-Such a contribution may be discussed publicly, but it is not accepted canonically through ordinary repository workflow. It enters controlled review. If the resulting decision materially affects public EKR meaning, the outcome and rationale are recorded publicly in [`governance/decisions/`](governance/decisions/).[m
+[32m+[m[32mSuch a contribution may be discussed publicly, but it is not accepted canonically through ordinary repository workflow. It enters separate review. If the resulting decision materially affects public EKR meaning, the outcome and rationale are recorded publicly in [`governance/decisions/`](governance/decisions/).[m
+ [m
+[31m-A private control document cannot silently redefine public EKR. A change to an existing canonical anchor becomes effective only through a controlled new version or release of that anchor.[m
+[32m+[m[32mNon-public control or review material cannot silently redefine public EKR. A change to an existing canonical anchor becomes effective only through a controlled new version or release of that anchor.[m
+ [m
+ See [`governance/CANONICAL-POLICY.md`](governance/CANONICAL-POLICY.md).[m
+ [m
+[36m@@ -76,7 +80,7 @@[m [mRelease does not imply standardisation, certification, universal applicability o[m
+ [m
+ ## 8. Conflicts and unresolved questions[m
+ [m
+[31m-Where a contribution cannot be resolved without changing a canonical distinction, introducing a new material public claim, altering the public/reserved boundary or crossing a separate protection/publication gate, the repository does not decide the matter by vote or merge. The item is marked for controlled review and may remain open as a Proposal or Discussion until that review is complete.[m
+[32m+[m[32mWhere a contribution cannot be resolved without changing a canonical distinction, introducing a new material public claim, altering the current public scope or publication boundary, or deciding whether non-public material may be released, the repository does not decide the matter by vote or merge. The item is referred to the applicable review or governance process and may remain open as a Proposal or Discussion until that process is complete.[m
+ [m
+ ## 9. Repository neutrality[m
+ [m
+[1mdiff --git a/LICENSE b/LICENSE[m
+[1mindex ecbd1bc..6037554 100644[m
+[1m--- a/LICENSE[m
+[1m+++ b/LICENSE[m
+[36m@@ -18,7 +18,7 @@[m [mIt does not grant rights in:[m
+ [m
+ - third-party material carrying its own licence or rights notice;[m
+ - material merely referenced or linked from this repository;[m
+[31m-- unpublished, confidential, reserved or separately protected material;[m
+[32m+[m[32m- unpublished, confidential, non-public or separately protected material;[m
+ - trademarks, personal names or other rights not covered by copyright licensing.[m
+ [m
+ A repository contribution does not, by itself, transfer ownership or publication rights in material that the contributor is not authorised to license.[m
+[1mdiff --git a/README.md b/README.md[m
+[1mindex 4347f02..8006bd6 100644[m
+[1m--- a/README.md[m
+[1m+++ b/README.md[m
+[36m@@ -2,7 +2,7 @@[m
+ [m
+ **Public development workspace for Enterprise Knowledge Representation and EKR Architectural Guidance.**[m
+ [m
+[31m-This repository supports open discussion, structured proposals, challenges, implementation experience, evidence, examples and the controlled development of EKR Architectural Guidance.[m
+[32m+[m[32mThis repository supports open discussion, structured proposals, challenges, implementation experience, evidence, examples and the governed development of EKR Architectural Guidance.[m
+ [m
+ ## Canonical public definition[m
+ [m
+[36m@@ -39,7 +39,7 @@[m [mA contribution does **not** acquire EKR authority merely by being posted, discus[m
+ [m
+ | Status | Meaning |[m
+ |---|---|[m
+[31m-| **Canonical** | Published, versioned and formally designated as a canonical EKR anchor. Changes require controlled canonical governance, not an ordinary pull request. |[m
+[32m+[m[32m| **Canonical** | Published, versioned and formally designated as a canonical EKR anchor. Changes require separate canonical governance, not an ordinary pull request. |[m
+ | **Released Guidance** | Versioned EKR guidance accepted for public use at a stated maturity. It remains evolvable and is not a standard or certification scheme. |[m
+ | **Draft Guidance** | Guidance under controlled development. It may change materially and is not yet an accepted EKR recommendation. |[m
+ | **Proposal** | A structured suggestion, alternative, pattern or change request submitted for evaluation. |[m
+[36m@@ -71,7 +71,7 @@[m [mThis repository is intentionally neutral and limited in scope. It does not const[m
+ - a certification or conformance scheme;[m
+ - an automatic source of canonical EKR changes.[m
+ [m
+[31m-Material subject to separate publication, protection, confidentiality, security or intellectual-property controls is outside the scope of this public repository unless and until it is deliberately released.[m
+[32m+[m[32mMaterial that has not been authorised for public release under applicable publication, protection, confidentiality, security or intellectual-property controls is outside the current scope of this repository.[m
+ [m
+ ## Licence[m
+ [m
+[1mdiff --git a/ROADMAP.md b/ROADMAP.md[m
+[1mindex cf6abd1..700c720 100644[m
+[1m--- a/ROADMAP.md[m
+[1m+++ b/ROADMAP.md[m
+[36m@@ -22,7 +22,7 @@[m [mEstablish the public EKR workspace with:[m
+ [m
+ The Guidance seed is **Draft Guidance**, not a released reference architecture.[m
+ [m
+[31m-## 3. Article 1 — next publication gate[m
+[32m+[m[32m## 3. Article 1 — next publication milestone[m
+ [m
+ Complete and release **“Data Accessibility Is Not Understanding”** after the repository mechanism is operational and its contribution routes have been tested.[m
+ [m
+[36m@@ -44,7 +44,7 @@[m [mExamples remain **Example** status unless explicitly incorporated into versioned[m
+ [m
+ Once EKR foundation-oriented guidance and sufficient public evidence exist, candidate representation foundations may be assessed against public EKR requirements.[m
+ [m
+[31m-No candidate foundation is assumed or selected by this launch roadmap.[m
+[32m+[m[32mNo candidate foundation is assumed or selected by this roadmap.[m
+ [m
+ ## Development principle[m
+ [m
+[1mdiff --git a/examples/README.md b/examples/README.md[m
+[1mindex b0599aa..2a5dcd9 100644[m
+[1m--- a/examples/README.md[m
+[1m+++ b/examples/README.md[m
+[36m@@ -15,4 +15,4 @@[m [mAn example does **not**:[m
+ [m
+ Examples should state their context, objectives, assumptions, constraints, evidence and limitations clearly.[m
+ [m
+[31m-A first illustrative case may be added later, but no example is required to establish the canonical Working Definition.[m
+[32m+[m[32mExamples may be added progressively. Publication in this area does not change the status of the canonical Working Definition or of any Guidance artefact.[m
+[1mdiff --git a/governance/CANONICAL-POLICY.md b/governance/CANONICAL-POLICY.md[m
+[1mindex 0de65d5..6958265 100644[m
+[1m--- a/governance/CANONICAL-POLICY.md[m
+[1m+++ b/governance/CANONICAL-POLICY.md[m
+[36m@@ -4,7 +4,7 @@[m
+ [m
+ This policy explains how public repository contributions may influence EKR without turning GitHub activity into an alternative canonical authority.[m
+ [m
+[31m-It is a **public governance policy**. Internal control material used to review claims, boundaries and publication decisions is not reproduced here.[m
+[32m+[m[32mIt is a **public governance policy**. Non-public review material used to assess claims, boundaries and publication decisions is not reproduced here.[m
+ [m
+ ## 2. Current canonical public anchor[m
+ [m
+[36m@@ -34,10 +34,10 @@[m [mA proposal is treated as canonical-impact when accepting it would materially cha[m
+ [m
+ - a canonical EKR distinction;[m
+ - an existing material public claim;[m
+[31m-- the public/reserved publication boundary; or[m
+[32m+[m[32m- the current public scope or publication boundary; or[m
+ - an existing canonical anchor.[m
+ [m
+[31m-A proposal may also trigger controlled claim review when it introduces a materially new public proposition rather than supporting or clarifying an already controlled position.[m
+[32m+[m[32mA proposal may also trigger separate claim review when it introduces a materially new public proposition rather than supporting or clarifying an already controlled position.[m
+ [m
+ ## 5. Public proposal, separate acceptance path[m
+ [m
+[36m@@ -49,7 +49,7 @@[m [mCanonical-impact proposals may be raised and debated publicly. They cannot be ac[m
+ - an ordinary pull-request merge; or[m
+ - release of a Guidance document alone.[m
+ [m
+[31m-At launch, canonical-impact acceptance is the responsibility of the **founding canonical steward, Jean Vieille, under controlled EKR governance**.[m
+[32m+[m[32mUnder the current governance, canonical-impact acceptance is the responsibility of the **canonical steward, currently Jean Vieille**.[m
+ [m
+ ## 6. Public decision records[m
+ [m
+[36m@@ -63,11 +63,11 @@[m [mA public decision record identifies, as applicable:[m
+ - the affected canonical/public artefact;[m
+ - the effective version or release.[m
+ [m
+[31m-The record need not publish confidential internal review material or reserved implementation detail.[m
+[32m+[m[32mThe record need not publish confidential or non-public review material, protected implementation detail, or information that cannot lawfully be disclosed.[m
+ [m
+ ## 7. When a canonical change becomes effective[m
+ [m
+[31m-A private internal control change cannot silently redefine public EKR.[m
+[32m+[m[32mNon-public control or review material cannot silently redefine public EKR.[m
+ [m
+ A change to an existing canonical anchor becomes effective only 

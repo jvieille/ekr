@@ -22,7 +22,7 @@ Establish the public EKR workspace with:
 
 The Guidance seed is **Draft Guidance**, not a released reference architecture.
 
-## 3. Article 1 — next publication gate
+## 3. Article 1 — next publication milestone
 
 Complete and release **“Data Accessibility Is Not Understanding”** after the repository mechanism is operational and its contribution routes have been tested.
 
@@ -44,7 +44,7 @@ Examples remain **Example** status unless explicitly incorporated into versioned
 
 Once EKR foundation-oriented guidance and sufficient public evidence exist, candidate representation foundations may be assessed against public EKR requirements.
 
-No candidate foundation is assumed or selected by this launch roadmap.
+No candidate foundation is assumed or selected by this roadmap.
 
 ## Development principle
 

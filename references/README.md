@@ -22,4 +22,4 @@ A structured evidence submission should identify:
 
 Primary and authoritative sources are preferred for standards, specifications and factual claims. Implementation evidence should include enough context to understand what the case can and cannot support.
 
-The internal evidence-review corpus used during earlier EKR development is not automatically published here. Public indexing is deliberate and source-by-source.
+Earlier evidence-review material used during EKR development is not automatically part of this public repository. Sources are considered for public indexing deliberately and source by source.

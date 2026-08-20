@@ -23,6 +23,6 @@ A decision record should identify, as applicable:
 7. **Effective version or release**
 8. **Related Discussion, Issue or pull request**
 
-Internal review material, confidential information and reserved implementation detail are not required to be published in a public decision record.
+Confidential or non-public review material, protected implementation detail, and information that cannot lawfully be disclosed are not required to be published in a public decision record.
 
 See the [Public EKR Canonicality Policy](../CANONICAL-POLICY.md).

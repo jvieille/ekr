@@ -15,4 +15,4 @@ An example does **not**:
 
 Examples should state their context, objectives, assumptions, constraints, evidence and limitations clearly.
 
-A first illustrative case may be added later, but no example is required to establish the canonical Working Definition.
+Examples may be added progressively. Publication in this area does not change the status of the canonical Working Definition or of any Guidance artefact.

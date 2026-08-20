@@ -2,7 +2,7 @@
 
 **Public development workspace for Enterprise Knowledge Representation and EKR Architectural Guidance.**
 
-This repository supports open discussion, structured proposals, challenges, implementation experience, evidence, examples and the controlled development of EKR Architectural Guidance.
+This repository supports open discussion, structured proposals, challenges, implementation experience, evidence, examples and the governed development of EKR Architectural Guidance.
 
 ## Canonical public definition
 
@@ -39,7 +39,7 @@ A contribution does **not** acquire EKR authority merely by being posted, discus
 
 | Status | Meaning |
 |---|---|
-| **Canonical** | Published, versioned and formally designated as a canonical EKR anchor. Changes require controlled canonical governance, not an ordinary pull request. |
+| **Canonical** | Published, versioned and formally designated as a canonical EKR anchor. Changes require separate canonical governance, not an ordinary pull request. |
 | **Released Guidance** | Versioned EKR guidance accepted for public use at a stated maturity. It remains evolvable and is not a standard or certification scheme. |
 | **Draft Guidance** | Guidance under controlled development. It may change materially and is not yet an accepted EKR recommendation. |
 | **Proposal** | A structured suggestion, alternative, pattern or change request submitted for evaluation. |
@@ -71,7 +71,7 @@ This repository is intentionally neutral and limited in scope. It does not const
 - a certification or conformance scheme;
 - an automatic source of canonical EKR changes.
 
-Material subject to separate publication, protection, confidentiality, security or intellectual-property controls is outside the scope of this public repository unless and until it is deliberately released.
+Material that has not been authorised for public release under applicable publication, protection, confidentiality, security or intellectual-property controls is outside the current scope of this repository.
 
 ## Licence
 

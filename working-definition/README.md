@@ -1,6 +1,6 @@
 # EKR Working Definition
 
-**Status: Canonical external publication — linked, not edited here**
+**Status: Canonical publication — linked, not edited here**
 
 The canonical public definition of Enterprise Knowledge Representation is:
 
