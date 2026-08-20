@@ -1,0 +1,77 @@
+name: Implementation experience or case
+description: Contribute practitioner experience, an implementation case, pattern, constraint or observed lesson relevant to EKR Guidance.
+title: "[Experience] "
+labels:
+  - "implementation-experience"
+  - "triage"
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Implementation experience enters the EKR repository as **non-normative evidence / Example material** unless it is deliberately incorporated into another governed artefact. Inclusion does not make a product, technology or architecture an EKR reference implementation.
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: Describe the system, organisation, domain, project or pilot context relevant to the experience.
+    validations:
+      required: true
+
+  - type: textarea
+    id: objective
+    attributes:
+      label: Objective or problem addressed
+      description: What operational or architectural objective was being pursued?
+    validations:
+      required: true
+
+  - type: textarea
+    id: approach
+    attributes:
+      label: Approach used
+      description: Describe the architecture, standards, models, platforms or methods involved, only to the level needed to understand the case.
+    validations:
+      required: true
+
+  - type: textarea
+    id: outcome
+    attributes:
+      label: Observed outcome
+      description: What happened in practice? Include useful positive and negative observations.
+    validations:
+      required: true
+
+  - type: textarea
+    id: relevance
+    attributes:
+      label: Relevance to EKR or Draft Guidance
+      description: Which EKR responsibility, Guidance section, open question or architectural distinction does this experience support, qualify or challenge?
+    validations:
+      required: true
+
+  - type: textarea
+    id: limitations
+    attributes:
+      label: Constraints and limitations
+      description: State boundary conditions, missing evidence, local assumptions and reasons the experience may not generalise.
+    validations:
+      required: true
+
+  - type: textarea
+    id: references
+    attributes:
+      label: Supporting references or evidence
+      description: Add public sources or other evidence where useful.
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: declarations
+    attributes:
+      label: Contribution declarations
+      options:
+        - label: I understand that this case is non-normative and does not make any implementation, product or technology canonical.
+          required: true
+        - label: I am authorised to disclose the material included in this issue publicly.
+          required: true

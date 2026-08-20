@@ -1,0 +1,81 @@
+name: Counterexample or challenge
+description: Submit a case that may falsify, overconstrain or expose ambiguity in current EKR framing or Draft Guidance.
+title: "[Challenge] "
+labels:
+  - "challenge"
+  - "triage"
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Counterexamples and challenges are explicitly welcome. A strong challenge helps identify where a distinction is ambiguous, too broad, too narrow, too costly, insufficiently governed or already satisfied by an established approach.
+
+  - type: textarea
+    id: challenged_position
+    attributes:
+      label: EKR position or Guidance material challenged
+      description: Identify the Working Definition distinction, Draft Guidance section, open question or repository proposition you are challenging. Link it where possible.
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: Describe the operational, architectural or organisational context needed to understand the challenge.
+    validations:
+      required: true
+
+  - type: textarea
+    id: counterexample
+    attributes:
+      label: Counterexample or challenge
+      description: Describe the case and why the current framing or Guidance does not handle it adequately.
+    validations:
+      required: true
+
+  - type: textarea
+    id: consequence
+    attributes:
+      label: Why it matters
+      description: What conclusion, ambiguity, cost, failure mode or architectural consequence does the case expose?
+    validations:
+      required: true
+
+  - type: textarea
+    id: boundaries
+    attributes:
+      label: Boundary conditions and limitations
+      description: State assumptions, conditions, scope limits or reasons the case may not generalise.
+    validations:
+      required: false
+
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Supporting evidence or references
+      description: Provide sources, observations or implementation evidence that allow the challenge to be assessed.
+    validations:
+      required: false
+
+  - type: dropdown
+    id: canonical_impact
+    attributes:
+      label: Possible canonical or public-scope impact
+      description: Could resolving this challenge materially affect a canonical EKR distinction, material public claim, current public scope or canonical anchor?
+      options:
+        - No known impact
+        - Uncertain — review requested
+        - Possible canonical or public-scope impact
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: declarations
+    attributes:
+      label: Contribution declarations
+      options:
+        - label: I understand that submitting a challenge does not by itself change the status of the challenged EKR material.
+          required: true
+        - label: I am authorised to disclose the material included in this issue publicly.
+          required: true

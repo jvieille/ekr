@@ -9,7 +9,7 @@ Inclusion of a source here does **not** mean that EKR endorses the source, that 
 ## Two-stage contribution route
 
 1. Use the **References & evidence** Discussion category for exploration, relevance questions and early source suggestions.
-2. Use the structured **Reference / evidence** Issue route when a source is ready for review and possible indexing.
+2. Use the structured **Reference / evidence** [Issue form](https://github.com/jvieille/ekr/issues/new/choose) when a source is ready for review and possible indexing.
 
 A structured evidence submission should identify:
 

@@ -1,0 +1,103 @@
+name: Reference or evidence
+description: Submit a primary source, standard, paper, specification or other evidence for review and possible indexing.
+title: "[Evidence] "
+labels:
+  - "reference-evidence"
+  - "triage"
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this form when a source is ready for structured review. For exploratory relevance questions or early source suggestions, use the **References & evidence** Discussion category first.
+
+        Submission does not imply endorsement. Accepted sources may later be indexed in `references/` with their relevance and limitations made explicit.
+
+  - type: input
+    id: citation
+    attributes:
+      label: Source citation
+      description: Provide title, author or issuing body, version/date and publication information where applicable.
+      placeholder: Organisation/author — title — version/date
+    validations:
+      required: true
+
+  - type: input
+    id: link
+    attributes:
+      label: Public source link or DOI
+      description: Prefer the primary or official source where one exists.
+      placeholder: https://... or DOI
+    validations:
+      required: true
+
+  - type: input
+    id: authority
+    attributes:
+      label: Authoritative body or publisher
+      description: Identify the standards body, institution, publisher, project or other source authority.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: maturity
+    attributes:
+      label: Source maturity or status
+      description: Select the closest public status.
+      options:
+        - Published standard or formal specification
+        - Official recommendation or normative document
+        - Published peer-reviewed research
+        - Official technical or project documentation
+        - Published implementation evidence or case material
+        - Working draft, preprint or developing specification
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: affected_topic
+    attributes:
+      label: EKR or Guidance topic affected
+      description: Identify the claim, distinction, Guidance section, open question or architectural responsibility to which this source is relevant.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: relation
+    attributes:
+      label: Claimed relationship
+      options:
+        - Supports an existing EKR or Guidance position
+        - Qualifies or narrows an existing position
+        - Challenges an existing position
+        - Shows an established approach already fulfils an EKR responsibility
+        - Provides background or terminology
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: relevance
+    attributes:
+      label: Claimed relevance
+      description: Explain specifically what the source contributes. Avoid relying on the title alone.
+    validations:
+      required: true
+
+  - type: textarea
+    id: limitations
+    attributes:
+      label: Limitations or scope conditions
+      description: Identify important scope, maturity, applicability or interpretation limits.
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: declarations
+    attributes:
+      label: Contribution declarations
+      options:
+        - label: I have linked or cited the source rather than reproducing material I am not authorised to publish.
+          required: true
+        - label: I understand that submission or indexing does not imply EKR endorsement of the source or all of its propositions.
+          required: true

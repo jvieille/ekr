@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Start an EKR Discussion
+    url: https://github.com/jvieille/ekr/discussions
+    about: Use Discussions for broad questions, alternatives, early challenges and exploratory references or evidence.

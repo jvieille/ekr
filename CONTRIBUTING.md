@@ -20,7 +20,7 @@ A Discussion has **Discussion** status and implies no decision or acceptance.
 
 ### Issues
 
-Use the structured Issue route for material that is ready for evaluation:
+Use the [structured Issue forms](https://github.com/jvieille/ekr/issues/new/choose) for material that is ready for evaluation:
 
 - **Architectural proposal** — a proposed requirement, distinction, pattern or decision question;
 - **Counterexample / challenge** — a case that may falsify, overconstrain or expose ambiguity in current framing or Draft Guidance;
@@ -28,6 +28,8 @@ Use the structured Issue route for material that is ready for evaluation:
 - **Reference / evidence** — a primary source, standard, paper, specification or other relevant evidence.
 
 Opening or triaging an Issue does not mean its proposed conclusion has been accepted.
+
+The four Issue Forms are deliberately different because they capture different kinds of input. Choose the closest route rather than forcing every contribution into an architectural proposal. The labels applied by the forms support triage only; they do not confer EKR status or acceptance.
 
 ### Pull requests
 

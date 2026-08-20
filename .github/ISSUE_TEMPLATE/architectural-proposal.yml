@@ -1,0 +1,104 @@
+name: Architectural proposal
+description: Propose an architectural requirement, distinction, pattern, decision question or Guidance change.
+title: "[Proposal] "
+labels:
+  - "architectural-proposal"
+  - "triage"
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for contributing to EKR. This issue enters the repository as a **Proposal**. Submission, discussion or acceptance for investigation does not make the proposal an accepted EKR position.
+
+        For broad or early-stage questions, please use GitHub Discussions first.
+
+  - type: textarea
+    id: question
+    attributes:
+      label: Architectural question or decision
+      description: What architectural question, gap or decision should this proposal address?
+      placeholder: Describe the question or decision as precisely as possible.
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed position or change
+      description: State the proposed requirement, distinction, pattern, decision question or text change.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: Main EKR area affected
+      description: Choose the closest area. Select Other if the proposal spans or falls outside these areas.
+      options:
+        - Purpose and scope discipline
+        - Architecture responsibility lens
+        - Authority and representation construction
+        - Shared EKR representation foundation
+        - Multiple viewpoints and UOD boundaries
+        - Lifecycle, conformance, validation and fitness
+        - Security, classification and sovereignty
+        - Patterns, evidence and examples
+        - Repository governance or public development process
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: rationale
+    attributes:
+      label: Rationale
+      description: Why is this change useful or necessary? What problem does it solve?
+    validations:
+      required: true
+
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence or experience
+      description: Cite relevant standards, primary sources, implementation experience, examples or counterexamples. State limitations where known.
+      placeholder: Links, citations and concise explanation of relevance.
+    validations:
+      required: false
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives and trade-offs
+      description: What alternatives have you considered, and what important trade-offs or boundary conditions should be kept explicit?
+    validations:
+      required: false
+
+  - type: dropdown
+    id: canonical_impact
+    attributes:
+      label: Possible canonical or public-scope impact
+      description: Could this proposal materially alter a canonical EKR distinction, an existing material public claim, the current public scope or a canonical anchor?
+      options:
+        - No known impact
+        - Uncertain — review requested
+        - Possible canonical or public-scope impact
+    validations:
+      required: true
+
+  - type: textarea
+    id: impact_explanation
+    attributes:
+      label: Impact explanation
+      description: If impact is uncertain or possible, explain what may be affected. This field does not itself determine canonical impact.
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: declarations
+    attributes:
+      label: Contribution declarations
+      options:
+        - label: I have read the contribution and governance rules and understand that this proposal does not acquire EKR authority by being submitted or merged.
+          required: true
+        - label: I am authorised to disclose the material included in this issue publicly.
+          required: true

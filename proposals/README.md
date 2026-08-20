@@ -4,7 +4,7 @@
 
 A Proposal is a structured suggestion, alternative, pattern or change request submitted for evaluation. A proposal is **not** an accepted EKR position merely because it appears in this repository.
 
-Currently, structured proposals should normally enter through the Architectural Proposal Issue route. This directory may later index or hold proposal artefacts when a durable repository document is useful.
+Currently, structured proposals should normally enter through the [Architectural Proposal Issue form](https://github.com/jvieille/ekr/issues/new/choose). This directory may later index or hold proposal artefacts when a durable repository document is useful.
 
 Proposal review may result in:
 

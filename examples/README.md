@@ -16,3 +16,6 @@ An example does **not**:
 Examples should state their context, objectives, assumptions, constraints, evidence and limitations clearly.
 
 Examples may be added progressively. Publication in this area does not change the status of the canonical Working Definition or of any Guidance artefact.
+
+
+Implementation experience should normally enter through the [Implementation experience / case Issue form](https://github.com/jvieille/ekr/issues/new/choose) before a durable example artefact is added here.
