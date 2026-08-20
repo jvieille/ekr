@@ -1,0 +1,15 @@
+cff-version: 1.2.0
+message: "If you use material from this repository, cite the relevant versioned EKR publication or guidance artefact where available. For the canonical EKR definition, cite the Working Definition V0.1."
+title: "Enterprise Knowledge Representation (EKR) public development repository"
+authors:
+  - family-names: "Vieille"
+    given-names: "Jean"
+repository-code: "https://github.com/jvieille/ekr"
+url: "https://github.com/jvieille/ekr"
+license: "CC-BY-4.0"
+keywords:
+  - "Enterprise Knowledge Representation"
+  - "EKR"
+  - "knowledge representation"
+  - "enterprise architecture"
+  - "interoperability"
