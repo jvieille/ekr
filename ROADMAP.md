@@ -20,7 +20,7 @@ Establish the public EKR workspace with:
 - Discussions, structured Issues and pull requests;
 - a visible seed for the first EKR Architectural Guidance.
 
-The Guidance seed is **Draft Guidance**, not a released reference architecture.
+The [initial Guidance V0.1 seed](guidance/architectural-guidance-v0.1/README.md) is now public as **Draft Guidance**, not a released reference architecture.
 
 ## 3. Article 1 — next publication milestone
 
@@ -40,16 +40,18 @@ Develop non-normative cases and evidence alongside the Guidance to test whether 
 
 Examples remain **Example** status unless explicitly incorporated into versioned guidance through the governed process.
 
-## 6. Later candidate-foundation assessment
+## 6. Later specialised assessments
 
-Once EKR foundation-oriented guidance and sufficient public evidence exist, candidate representation foundations may be assessed against public EKR requirements.
+As public EKR Guidance matures, specific architectural requirements may support more specialised assessment work. One such area is the shared EKR representation foundation: once its public requirements and decision criteria are sufficiently explicit, concrete candidate realisations may be assessed against them.
 
-No candidate foundation is assumed or selected by this roadmap.
+Such assessments are downstream branches of EKR development, not the destination of the Guidance as a whole. No particular foundation realisation, technology or implementation is assumed or selected by this roadmap.
 
 ## Development principle
 
 The sequence is deliberately evidence-driven:
 
-**Working Definition → Article 1 → Architectural Guidance V0.1 → examples/evidence → later candidate-foundation assessment**
+**Working Definition → Article 1 → Architectural Guidance V0.1 → evidence, examples and iterative Guidance development**
+
+Specialised assessments may branch from this cycle where public EKR requirements and sufficient evidence make them useful.
 
 The repository may expose preparatory Draft Guidance before Article 1 so that the article's call to contribution lands on a real, testable development process.

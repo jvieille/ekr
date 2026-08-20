@@ -58,7 +58,7 @@ Status belongs to artefacts and decisions, not to people, popularity or contribu
 
 ## Current development path
 
-The Working Definition V0.1 is published. The repository is now establishing the public development process and the seed for **EKR Architectural Guidance V0.1**. The near-term sequence is described in [ROADMAP.md](ROADMAP.md).
+The Working Definition V0.1 is published. The [initial public seed for EKR Architectural Guidance V0.1](guidance/architectural-guidance-v0.1/README.md) is now available as **Draft Guidance**, while the repository continues to establish and test the public contribution process. The near-term sequence is described in [ROADMAP.md](ROADMAP.md).
 
 ## Boundaries
 

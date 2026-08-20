@@ -14,7 +14,7 @@ EKR Architectural Guidance is not, at this stage:
 - a certification scheme;
 - a finished implementation methodology;
 - a mandatory target architecture or technology stack;
-- a universal ontology or representation foundation;
+- a new ontology or a prescribed concrete realisation of the shared EKR representation foundation;
 - a replacement for established standards, information models, ontologies or platform guidance.
 
 ## Status lifecycle
@@ -25,8 +25,14 @@ A version becomes **Released Guidance** only through an explicit versioned relea
 
 ## Architectural Guidance V0.1
 
-The first EKR Architectural Guidance will be developed in `guidance/architectural-guidance-v0.1/`.
+The **initial public seed** for the first EKR Architectural Guidance is now available in [architectural-guidance-v0.1/](architectural-guidance-v0.1/README.md).
 
-Its initial public seed will define purpose, scope/non-scope, planned structure and open questions. The seed will be explicitly labelled **Draft Guidance**; it is not Guidance V0.1 released.
+The seed defines purpose, scope/non-scope, planned structure, initial open questions and the development/release method. It is explicitly labelled **Draft Guidance**; it is not Guidance V0.1 released.
+
+Start with:
+
+- [Seed overview](architectural-guidance-v0.1/README.md)
+- [Development brief](architectural-guidance-v0.1/BRIEF.md)
+- [Initial open questions](architectural-guidance-v0.1/OPEN-QUESTIONS.md)
 
 See the repository [ROADMAP](../ROADMAP.md) for the public development sequence.
