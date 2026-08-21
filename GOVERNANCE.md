@@ -20,6 +20,8 @@ Anyone participating through Discussions, Issues or pull requests may question, 
 
 The maintainer manages repository housekeeping, navigation, labels, contribution triage, traceability and draft artefacts. The maintainer may classify contributions, request evidence, close duplicates, assign release milestones and merge changes that remain within the current public EKR boundary and do not create a new material public claim.
 
+Repository write and merge access is reserved to maintainers authorised to exercise the corresponding repository decision rights. GitHub permission is the technical implementation of those rights; it does not independently create EKR governance authority. A contributor does not become a maintainer by submitting a pull request, and granting technical access must follow an explicit governance decision.
+
 ### Canonical EKR authority
 
 Canonical-impact changes follow a separate governed path. Under the current governance, the canonical steward is **Jean Vieille**. Canonical authority is not delegated to issue popularity, contributor count, maintainer preference or an ordinary pull-request merge.
@@ -44,6 +46,19 @@ The normal progression is:
 **Discussion (optional) → structured Issue → triage → PR where a repository change is needed → Draft Guidance / repository update → release review → Released Guidance**
 
 This is not an automatic promotion pipeline.
+
+```mermaid
+flowchart LR
+    D["Discussion<br/>optional"] --> I[Structured Issue]
+    X[Direct structured contribution] --> I
+    I --> T[Maintainer triage]
+    T --> P["Pull request<br/>when repository content must change"]
+    T --> N["Disposition without PR<br/>when no repository change is needed"]
+    P --> M[Maintainer review and merge]
+    M --> S["Current repository state<br/>Draft Guidance where applicable"]
+    S --> R[Explicit release review]
+    R --> G["Released Guidance<br/>versioned tag + GitHub Release"]
+```
 
 - A contributor may open a structured Issue directly when prior Discussion is unnecessary.
 - A Discussion may end without an Issue or decision.
@@ -78,15 +93,19 @@ The Issue should remain the public record of the question and its disposition ev
 
 If an Issue originates in a Discussion, the relationship should remain visible by cross-reference. When practical, maintainers should use GitHub's discussion-to-issue route or add links manually in both directions.
 
-## 7. Pull requests and draft integration
+## 7. Pull requests, branches and draft integration
 
 For substantive repository changes, a pull request should normally link the Issue it addresses.
+
+The normal target branch is `main`. Ordinary contributors normally work on a branch in their own fork and open a pull request against `jvieille/ekr:main` (using GitHub's cross-fork comparison where needed). Maintainers may work on a non-`main` branch in the repository or in a fork, but the change still enters `main` through a pull request.
+
+`main` is the protected **current public development state** of the repository. It is not synonymous with **Released Guidance**, and a permanent `draft` branch is not required. Draft/Released/Canonical are artefact statuses, not branch names.
 
 When a PR fully resolves an Issue, the preferred convention is `Closes #<issue>` so GitHub closes the Issue when the PR is merged into the default branch. When the PR is only one step in a larger Issue, use a normal cross-reference such as `Relates to #<issue>` and leave the Issue open.
 
 Small housekeeping or typographical changes may be merged without a prior Issue when their scope is self-evident and they do not alter conceptual meaning or artefact status.
 
-A merged PR changes the current repository state. If it changes Draft Guidance, it changes the **draft**, not the release status.
+A maintainer merge into `main` is a governed acceptance of that change into the current repository state. If it changes Draft Guidance, it changes the **draft**, not the release status. Merge authority therefore carries repository decision authority only within the scope assigned to the maintainer under this governance; it does not by itself authorise a Guidance release, a new material public claim or a canonical change.
 
 ## 8. Release planning and traceability
 
@@ -95,6 +114,14 @@ Milestones may be used to group Issues and PRs intended for a particular Guidanc
 The intended traceability chain is:
 
 **Released Guidance → Git tag / GitHub Release → merged PRs → linked Issues → originating Discussions, where applicable**
+
+```mermaid
+flowchart LR
+    R[Released Guidance V0.x] --> T["Version-specific Git tag<br/>and GitHub Release"]
+    T --> P[Merged pull requests]
+    P --> I[Linked Issues]
+    I --> D["Originating Discussions<br/>where applicable"]
+```
 
 To preserve that chain:
 
@@ -114,11 +141,19 @@ Such a contribution may be discussed publicly, but it is not accepted canonicall
 
 Non-public control or review material cannot silently redefine public EKR. A change to an existing canonical anchor becomes effective only through a controlled new version or release of that anchor.
 
+```mermaid
+flowchart LR
+    C[Issue or PR] --> CI[canonical-impact]
+    CI --> CR[Separate canonical review]
+    CR --> DR["Public decision record<br/>when public meaning is affected"]
+    DR --> CA["New canonical anchor/version<br/>when required"]
+```
+
 See [`governance/CANONICAL-POLICY.md`](governance/CANONICAL-POLICY.md).
 
 ## 10. Guidance release logic
 
-Draft Guidance is explicitly provisional. A version becomes **Released Guidance** only through an explicit release decision after review of:
+Draft Guidance is explicitly provisional. The current draft may evolve on `main` through reviewed pull requests. A version becomes **Released Guidance** only through an explicit release decision after review of:
 
 - the intended version scope and unresolved items;
 - the relevant evidence, implementation experience and challenges;
@@ -127,7 +162,19 @@ Draft Guidance is explicitly provisional. A version becomes **Released Guidance*
 - public-scope and boundary conditions;
 - version metadata and changelog accuracy.
 
-When approved, the release is fixed to a version-specific Git tag and published as a GitHub Release with release notes. The corresponding Guidance changelog entry records the release and its status. The associated milestone may then be closed after any remaining items have been explicitly moved, deferred or otherwise dispositioned.
+When approved, the release is fixed to a version-specific Git tag and published as a GitHub Release with release notes. The corresponding Guidance changelog entry records the release and its status. The associated milestone may then be closed after any remaining items have been explicitly moved, deferred or otherwise dispositioned. New work then continues on `main` through new pull requests while the tagged release remains immutable.
+
+```mermaid
+flowchart TD
+    B["Contributor fork/branch<br/>or maintainer branch"] --> P[Pull request to main]
+    P --> M[Maintainer review and merge]
+    M --> MAIN["main<br/>current public development state"]
+    MAIN --> D[Draft Guidance evolves]
+    MAIN --> RR[Explicit release preparation and review]
+    RR --> TAG[Version-specific Git tag]
+    TAG --> REL["GitHub Release<br/>Released Guidance V0.x"]
+    REL -. subsequent work through new PRs .-> MAIN
+```
 
 Release does not imply standardisation, certification, universal applicability or canonical status.
 

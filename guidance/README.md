@@ -19,7 +19,7 @@ EKR Architectural Guidance is not, at this stage:
 
 ## Status lifecycle
 
-Guidance material may appear here as **Draft Guidance** while it is being challenged and reviewed. Draft Guidance may change materially and is not yet an accepted EKR recommendation.
+Guidance material may appear here as **Draft Guidance** while it is being challenged and reviewed. Draft Guidance may change materially and is not yet an accepted EKR recommendation. The protected `main` branch carries the current public development state; **Draft Guidance** is an artefact status, not the name of a separate long-lived branch.
 
 A version becomes **Released Guidance** only through an explicit versioned release decision after review. Released Guidance remains evolvable and does not automatically become Canonical.
 

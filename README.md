@@ -33,7 +33,7 @@ It provides routes to:
 - publish versioned guidance when it reaches an accepted maturity;
 - record public decisions that materially affect canonical EKR propositions.
 
-A contribution does **not** acquire EKR authority merely by being posted, discussed, accepted for investigation or merged into a draft.
+A contribution does **not** become **Released Guidance** or **Canonical** merely by being posted, discussed, accepted for investigation or merged. A maintainer may accept a reviewed change into **Draft Guidance** through the governed pull-request workflow.
 
 ## Public status model
 
@@ -59,6 +59,8 @@ Status belongs to artefacts and decisions, not to people, popularity or contribu
 ## Current development path
 
 The Working Definition V0.1 is published. The [initial public seed for EKR Architectural Guidance V0.1](guidance/architectural-guidance-v0.1/README.md) is now available as **Draft Guidance**, while the repository continues to establish and test the public contribution process. The near-term sequence is described in [ROADMAP.md](ROADMAP.md).
+
+The protected `main` branch carries the current public development state. Draft/Released/Canonical are artefact statuses rather than branch names: versioned Guidance releases are fixed by Git tags and GitHub Releases, while new draft work continues through pull requests to `main`.
 
 ## Boundaries
 

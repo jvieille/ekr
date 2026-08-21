@@ -1,3 +1,7 @@
+## Pull request target
+
+Normal contributions target the protected `main` branch. External contributors normally submit from a branch in their own fork; maintainers may submit from a non-`main` repository branch. Draft/Released status is not selected by choosing a different target branch.
+
 ## Linked issue(s)
 
 For a substantive change, link the Issue that tracks the question or decision:
@@ -29,6 +33,6 @@ Identify the affected repository artefact, Draft Guidance section, open question
 - [ ] This PR links the relevant Issue, or is explicitly identified as a small housekeeping change.
 - [ ] The change stays within material I am authorised to disclose publicly.
 - [ ] Relevant assumptions and limitations are stated where needed.
-- [ ] I understand that merging this PR changes repository content but does not by itself make Draft Guidance Released Guidance or alter a canonical EKR anchor.
+- [ ] I understand that a maintainer merge into `main` accepts this change into the current repository state, but does not by itself make Draft Guidance Released Guidance, create a new material public EKR claim or alter a canonical EKR anchor.
 
 > Maintainer note: release milestone assignment and canonical-impact classification are part of review/triage and do not need to be determined by the contributor.
