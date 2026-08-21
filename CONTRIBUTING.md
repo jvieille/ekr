@@ -164,19 +164,32 @@ Not every Issue requires a PR. Evidence may be reviewed without changing Guidanc
 
 > **Terminology note:** a GitHub **Draft pull request** is simply a pull request that is still work in progress. It is unrelated to the EKR status **Draft Guidance**. An EKR artefact may have Draft Guidance status even when changes to it are submitted through ordinary, non-draft pull requests.
 
-### 7.4 Draft state
+### 7.4 Review conversations
+
+Maintainers may use inline pull-request review conversations to request clarification or changes. When branch protection requires conversation resolution, a **published unresolved review conversation blocks merge** until it is resolved.
+
+For the author of the pull request:
+
+- do **not** start a separate review of your own pull request merely to answer maintainer feedback; comments started through GitHub's review workflow may remain pending/private until submitted and are not required for a normal response;
+- if an explanation is useful, reply directly in the maintainer's existing review conversation;
+- if a content change is requested, update the pull-request branch and push the change; the open PR updates automatically;
+- once the feedback has been addressed, resolve the existing conversation if GitHub permits it; otherwise the maintainer resolves it after verification.
+
+A resolved conversation records that the review point has been dispositioned. It does not by itself confer EKR status or replace the maintainer's final review of the PR.
+
+### 7.5 Draft state
 
 Merging a reviewed PR into `main` updates the current public development state. If the change affects Draft Guidance, it becomes part of the evolving **Draft Guidance**, not a release.
 
 `main` is therefore not a release-only branch, and the repository does not require a permanent `draft` branch. Draft/Released/Canonical are statuses of artefacts and versions. Short-lived contributor or maintainer branches carry proposed changes until they are reviewed and merged.
 
-### 7.5 Release targeting
+### 7.6 Release targeting
 
 Milestones are used to group Issues and PRs that are intended to contribute to a particular Guidance release, for example **EKR Architectural Guidance V0.1**.
 
 A milestone is a planning and traceability device. Assignment to a milestone does not itself confer EKR status or guarantee inclusion in the release.
 
-### 7.6 Released Guidance
+### 7.7 Released Guidance
 
 A Guidance version becomes **Released Guidance** only after the explicit release review defined in [GOVERNANCE.md](GOVERNANCE.md).
 
@@ -190,7 +203,7 @@ A release is an explicit governed action separate from an ordinary PR merge. Whe
 
 This provides a traceability chain from a release to its PRs, from PRs to Issues, and, where applicable, from Issues back to originating Discussions.
 
-### 7.7 Technical permissions and decision authority
+### 7.8 Technical permissions and decision authority
 
 Repository write and merge access is reserved to maintainers authorised under [GOVERNANCE.md](GOVERNANCE.md). Technical GitHub permissions implement those governance rights; they do not independently create them.
 

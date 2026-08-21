@@ -99,13 +99,15 @@ For substantive repository changes, a pull request should normally link the Issu
 
 The normal target branch is `main`. Ordinary contributors normally work on a branch in their own fork and open a pull request against `jvieille/ekr:main` (using GitHub's cross-fork comparison where needed). Maintainers may work on a non-`main` branch in the repository or in a fork, but the change still enters `main` through a pull request.
 
-GitHub workflow states such as **Draft pull request**, **Open**, **Merged** or **Closed** are repository workflow states. They must not be confused with EKR artefact statuses such as **Draft Guidance** or **Released Guidance**.
-
 `main` is the protected **current public development state** of the repository. It is not synonymous with **Released Guidance**, and a permanent `draft` branch is not required. Draft/Released/Canonical are artefact statuses, not branch names.
+
+GitHub workflow states such as **Draft pull request**, **Open**, **Merged** or **Closed** are repository workflow states. They must not be confused with EKR artefact statuses such as **Draft Guidance** or **Released Guidance**.
 
 When a PR fully resolves an Issue, the preferred convention is `Closes #<issue>` so GitHub closes the Issue when the PR is merged into the default branch. When the PR is only one step in a larger Issue, use a normal cross-reference such as `Relates to #<issue>` and leave the Issue open.
 
 Small housekeeping or typographical changes may be merged without a prior Issue when their scope is self-evident and they do not alter conceptual meaning or artefact status.
+
+Where branch protection requires pull-request review conversations to be resolved before merge, a published unresolved review conversation is a merge blocker. Contributors address such feedback through the existing review thread and, when required, by updating the PR branch. Starting a separate review on one's own PR is not required for disposition of maintainer feedback.
 
 A maintainer merge into `main` is a governed acceptance of that change into the current repository state. If it changes Draft Guidance, it changes the **draft**, not the release status. Merge authority therefore carries repository decision authority only within the scope assigned to the maintainer under this governance; it does not by itself authorise a Guidance release, a new material public claim or a canonical change.
 
