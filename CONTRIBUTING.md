@@ -162,6 +162,8 @@ When repository text or another versioned artefact must change, the PR links the
 
 Not every Issue requires a PR. Evidence may be reviewed without changing Guidance, a challenge may confirm the existing text, and an implementation case may remain non-normative Example material.
 
+> **Terminology note:** a GitHub **Draft pull request** is simply a pull request that is still work in progress. It is unrelated to the EKR status **Draft Guidance**. An EKR artefact may have Draft Guidance status even when changes to it are submitted through ordinary, non-draft pull requests.
+
 ### 7.4 Draft state
 
 Merging a reviewed PR into `main` updates the current public development state. If the change affects Draft Guidance, it becomes part of the evolving **Draft Guidance**, not a release.
