@@ -39,7 +39,23 @@ If an Issue grows out of a Discussion, include the Discussion link. A maintainer
 
 ### Pull requests
 
-Use a pull request for a precise change to repository text or artefacts.
+Use a pull request for a precise change to repository text or artefacts. The normal target is the protected `main` branch.
+
+If you are an ordinary external contributor, the normal GitHub path is:
+
+1. fork `jvieille/ekr` to your own account;
+2. create a branch in your fork;
+3. commit the proposed change there;
+4. open a pull request from that fork branch to `jvieille/ekr:main` (use **Compare across forks** where needed).
+
+Maintainers may instead use a non-`main` branch in the repository, but they also submit changes through a pull request. Direct development commits to `main` are not the normal contribution path.
+
+```mermaid
+flowchart LR
+    F["Contributor fork<br/>feature branch"] --> PR["Pull request"]
+    M["Maintainer<br/>non-main branch"] --> PR
+    PR --> U["jvieille/ekr<br/>protected main"]
+```
 
 For substantive changes, a PR should normally be linked to an Issue. Use:
 
@@ -105,6 +121,19 @@ The normal workflow is:
 
 **Discussion (optional) → structured Issue → triage → PR where a repository change is needed → Draft Guidance / repository update → release review → versioned release**
 
+```mermaid
+flowchart LR
+    D["Discussion<br/>optional"] --> I[Structured Issue]
+    X[Direct Issue] --> I
+    I --> T[Maintainer triage]
+    T --> P[Contributor or maintainer branch]
+    P --> PR[Pull request to main]
+    PR --> M[Maintainer merge]
+    M --> DS["Current public<br/>Draft state"]
+    DS --> RR[Explicit release review]
+    RR --> REL[Versioned Released Guidance]
+```
+
 The stages are deliberately not automatic promotions.
 
 ### 7.1 Discussion to Issue
@@ -135,7 +164,9 @@ Not every Issue requires a PR. Evidence may be reviewed without changing Guidanc
 
 ### 7.4 Draft state
 
-Merging a reviewed PR into `main` updates the current public draft state. If the change affects Draft Guidance, it becomes part of the evolving **Draft Guidance**, not a release.
+Merging a reviewed PR into `main` updates the current public development state. If the change affects Draft Guidance, it becomes part of the evolving **Draft Guidance**, not a release.
+
+`main` is therefore not a release-only branch, and the repository does not require a permanent `draft` branch. Draft/Released/Canonical are statuses of artefacts and versions. Short-lived contributor or maintainer branches carry proposed changes until they are reviewed and merged.
 
 ### 7.5 Release targeting
 
@@ -147,7 +178,7 @@ A milestone is a planning and traceability device. Assignment to a milestone doe
 
 A Guidance version becomes **Released Guidance** only after the explicit release review defined in [GOVERNANCE.md](GOVERNANCE.md).
 
-When a release is approved, the repository should create:
+A release is an explicit governed action separate from an ordinary PR merge. When a release is approved, the repository should create:
 
 - a version-specific Git tag;
 - a GitHub Release based on that tag;
@@ -156,6 +187,12 @@ When a release is approved, the repository should create:
 - closure of the associated release milestone after its remaining items have been dispositioned.
 
 This provides a traceability chain from a release to its PRs, from PRs to Issues, and, where applicable, from Issues back to originating Discussions.
+
+### 7.7 Technical permissions and decision authority
+
+Repository write and merge access is reserved to maintainers authorised under [GOVERNANCE.md](GOVERNANCE.md). Technical GitHub permissions implement those governance rights; they do not independently create them.
+
+A maintainer merge into `main` accepts a change into the current repository state. It does **not** by itself authorise a Guidance release, create a new material public EKR claim or alter a canonical anchor. Those actions require the additional review or decision process applicable to their status.
 
 ## 8. Licence of contributions
 

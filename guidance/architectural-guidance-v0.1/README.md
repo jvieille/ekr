@@ -45,7 +45,7 @@ The normal development path is:
 
 **Discussion (optional) → structured Issue → triage → PR where a repository change is needed → Draft Guidance → release review → Released Guidance**
 
-A contribution may start directly as an Issue when prior Discussion is unnecessary, and not every Issue requires a PR. Substantive PRs link the Issues they implement; Issues retain links to originating Discussions where applicable. Release-targeted work may be grouped in a milestone, while the actual Guidance release is fixed through an explicit versioned release decision, Git tag and GitHub Release.
+A contribution may start directly as an Issue when prior Discussion is unnecessary, and not every Issue requires a PR. Substantive PRs link the Issues they implement; Issues retain links to originating Discussions where applicable. Ordinary contributors normally propose changes from branches in their own forks, while maintainers may use repository branches; both routes target the protected `main` branch through pull requests. `main` carries the current public development state, including Draft Guidance. Release-targeted work may be grouped in a milestone, while an actual Guidance release is fixed through an explicit versioned release decision, Git tag and GitHub Release.
 
 A Discussion, Issue, pull request, milestone assignment or merged Draft Guidance change does not automatically acquire canonical EKR status. Changes that would materially affect a canonical EKR proposition follow the separate process described in the repository [Canonicality Policy](../../governance/CANONICAL-POLICY.md).
 
