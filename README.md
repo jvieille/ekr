@@ -50,10 +50,10 @@ Status belongs to artefacts and decisions, not to people, popularity or contribu
 
 ## How to participate
 
-- **Discuss** broad questions, alternatives and early challenges in [GitHub Discussions](https://github.com/jvieille/ekr/discussions).
+- **Discuss** broad questions, alternatives and early challenges in [GitHub Discussions](https://github.com/jvieille/ekr/discussions). Discussion is optional when a contribution is already concrete.
 - **Submit** structured proposals, counterexamples, implementation experience or references/evidence through the [structured Issue forms](https://github.com/jvieille/ekr/issues/new/choose).
-- **Propose precise text changes** through pull requests, normally after or alongside an issue.
-- Read [CONTRIBUTING.md](CONTRIBUTING.md) before submitting material.
+- **Propose precise text changes** through pull requests, normally linked to the Issue they implement.
+- **Follow the contribution lifecycle** in [CONTRIBUTING.md](CONTRIBUTING.md), including the traceability path from Discussions to Issues, PRs and versioned releases.
 - Read [GOVERNANCE.md](GOVERNANCE.md) and the public [Canonicality Policy](governance/CANONICAL-POLICY.md) to understand decision rights and status transitions.
 
 ## Current development path

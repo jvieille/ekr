@@ -43,9 +43,11 @@ This seed is not:
 
 The normal development path is:
 
-**Discussion → Proposal or evidence item → triage → Draft Guidance change → review → Released Guidance**
+**Discussion (optional) → structured Issue → triage → PR where a repository change is needed → Draft Guidance → release review → Released Guidance**
 
-A Discussion, Issue, pull request or merged Draft Guidance change does not automatically acquire canonical EKR status. Changes that would materially affect a canonical EKR proposition follow the separate process described in the repository [Canonicality Policy](../../governance/CANONICAL-POLICY.md).
+A contribution may start directly as an Issue when prior Discussion is unnecessary, and not every Issue requires a PR. Substantive PRs link the Issues they implement; Issues retain links to originating Discussions where applicable. Release-targeted work may be grouped in a milestone, while the actual Guidance release is fixed through an explicit versioned release decision, Git tag and GitHub Release.
+
+A Discussion, Issue, pull request, milestone assignment or merged Draft Guidance change does not automatically acquire canonical EKR status. Changes that would materially affect a canonical EKR proposition follow the separate process described in the repository [Canonicality Policy](../../governance/CANONICAL-POLICY.md).
 
 Development is evidence-driven rather than calendar-driven. Draft material may change substantially as questions, counterexamples, implementation experience and references are reviewed.
 

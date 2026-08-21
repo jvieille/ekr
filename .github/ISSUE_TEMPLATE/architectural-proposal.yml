@@ -8,16 +8,16 @@ body:
   - type: markdown
     attributes:
       value: |
-        Thank you for contributing to EKR. This issue enters the repository as a **Proposal**. Submission, discussion or acceptance for investigation does not make the proposal an accepted EKR position.
+        Thank you for contributing to EKR. This issue enters the repository as a **Proposal**. Submission or acceptance for investigation does not make the proposal an accepted EKR position.
 
-        For broad or early-stage questions, please use GitHub Discussions first.
+        If the question is still broad or exploratory, you may prefer to start in GitHub Discussions.
 
   - type: textarea
     id: question
     attributes:
-      label: Architectural question or decision
-      description: What architectural question, gap or decision should this proposal address?
-      placeholder: Describe the question or decision as precisely as possible.
+      label: Architectural question or gap
+      description: What question, gap or decision should be addressed?
+      placeholder: Describe the problem as precisely as practical.
     validations:
       required: true
 
@@ -25,15 +25,23 @@ body:
     id: proposal
     attributes:
       label: Proposed position or change
-      description: State the proposed requirement, distinction, pattern, decision question or text change.
+      description: What requirement, distinction, pattern, decision question or text change do you propose?
+    validations:
+      required: true
+
+  - type: textarea
+    id: rationale
+    attributes:
+      label: Why this matters
+      description: Explain the operational or architectural reason for the proposal.
     validations:
       required: true
 
   - type: dropdown
     id: area
     attributes:
-      label: Main EKR area affected
-      description: Choose the closest area. Select Other if the proposal spans or falls outside these areas.
+      label: Main area affected
+      description: Choose the closest area. Select Other if the proposal spans several areas.
       options:
         - Purpose and scope discipline
         - Architecture responsibility lens
@@ -49,56 +57,26 @@ body:
       required: true
 
   - type: textarea
-    id: rationale
-    attributes:
-      label: Rationale
-      description: Why is this change useful or necessary? What problem does it solve?
-    validations:
-      required: true
-
-  - type: textarea
     id: evidence
     attributes:
-      label: Evidence or experience
-      description: Cite relevant standards, primary sources, implementation experience, examples or counterexamples. State limitations where known.
-      placeholder: Links, citations and concise explanation of relevance.
+      label: Evidence, examples or alternatives
+      description: Optional. Add relevant sources, experience, counterexamples, alternatives or important trade-offs.
     validations:
       required: false
 
-  - type: textarea
-    id: alternatives
+  - type: input
+    id: discussion
     attributes:
-      label: Alternatives and trade-offs
-      description: What alternatives have you considered, and what important trade-offs or boundary conditions should be kept explicit?
-    validations:
-      required: false
-
-  - type: dropdown
-    id: canonical_impact
-    attributes:
-      label: Possible canonical or public-scope impact
-      description: Could this proposal materially alter a canonical EKR distinction, an existing material public claim, the current public scope or a canonical anchor?
-      options:
-        - No known impact
-        - Uncertain — review requested
-        - Possible canonical or public-scope impact
-    validations:
-      required: true
-
-  - type: textarea
-    id: impact_explanation
-    attributes:
-      label: Impact explanation
-      description: If impact is uncertain or possible, explain what may be affected. This field does not itself determine canonical impact.
+      label: Related Discussion
+      description: Optional. If this proposal grew out of a GitHub Discussion, paste its URL here.
+      placeholder: https://github.com/jvieille/ekr/discussions/...
     validations:
       required: false
 
   - type: checkboxes
     id: declarations
     attributes:
-      label: Contribution declarations
+      label: Public contribution
       options:
-        - label: I have read the contribution and governance rules and understand that this proposal does not acquire EKR authority by being submitted or merged.
-          required: true
-        - label: I am authorised to disclose the material included in this issue publicly.
+        - label: I am authorised to disclose the material included in this issue publicly and understand that submission does not by itself confer EKR status.
           required: true

@@ -23,6 +23,8 @@ Guidance material may appear here as **Draft Guidance** while it is being challe
 
 A version becomes **Released Guidance** only through an explicit versioned release decision after review. Released Guidance remains evolvable and does not automatically become Canonical.
 
+Release traceability is maintained through version-specific Git tags and GitHub Releases, linked PRs and Issues, and originating Discussions where applicable. Milestones may be used to group work intended for a release, but milestone assignment does not itself confer Guidance status.
+
 ## Architectural Guidance V0.1
 
 The **initial public seed** for the first EKR Architectural Guidance is now available in [architectural-guidance-v0.1/](architectural-guidance-v0.1/README.md).

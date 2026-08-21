@@ -1,5 +1,5 @@
 name: Implementation experience or case
-description: Contribute practitioner experience, an implementation case, pattern, constraint or observed lesson relevant to EKR Guidance.
+description: Contribute practitioner experience, an implementation case, constraint or observed lesson relevant to EKR Guidance.
 title: "[Experience] "
 labels:
   - "implementation-experience"
@@ -8,44 +8,28 @@ body:
   - type: markdown
     attributes:
       value: |
-        Implementation experience enters the EKR repository as **non-normative evidence / Example material** unless it is deliberately incorporated into another governed artefact. Inclusion does not make a product, technology or architecture an EKR reference implementation.
+        Implementation experience enters the repository as **non-normative evidence / Example material** unless it is deliberately incorporated into another governed artefact. Inclusion does not make a product, technology or architecture an EKR reference implementation.
 
   - type: textarea
     id: context
     attributes:
-      label: Context
-      description: Describe the system, organisation, domain, project or pilot context relevant to the experience.
+      label: Context and objective
+      description: What system, organisation, domain, project or pilot is involved, and what operational or architectural objective was being pursued?
     validations:
       required: true
 
   - type: textarea
-    id: objective
+    id: experience
     attributes:
-      label: Objective or problem addressed
-      description: What operational or architectural objective was being pursued?
-    validations:
-      required: true
-
-  - type: textarea
-    id: approach
-    attributes:
-      label: Approach used
-      description: Describe the architecture, standards, models, platforms or methods involved, only to the level needed to understand the case.
-    validations:
-      required: true
-
-  - type: textarea
-    id: outcome
-    attributes:
-      label: Observed outcome
-      description: What happened in practice? Include useful positive and negative observations.
+      label: What was tried or observed?
+      description: Describe the relevant approach and what happened in practice, including useful positive or negative observations.
     validations:
       required: true
 
   - type: textarea
     id: relevance
     attributes:
-      label: Relevance to EKR or Draft Guidance
+      label: Why is it relevant to EKR?
       description: Which EKR responsibility, Guidance section, open question or architectural distinction does this experience support, qualify or challenge?
     validations:
       required: true
@@ -53,25 +37,24 @@ body:
   - type: textarea
     id: limitations
     attributes:
-      label: Constraints and limitations
-      description: State boundary conditions, missing evidence, local assumptions and reasons the experience may not generalise.
+      label: Constraints, limitations or supporting material
+      description: Optional. State important local assumptions, limitations, missing evidence or public references.
     validations:
-      required: true
+      required: false
 
-  - type: textarea
-    id: references
+  - type: input
+    id: discussion
     attributes:
-      label: Supporting references or evidence
-      description: Add public sources or other evidence where useful.
+      label: Related Discussion
+      description: Optional. If this case grew out of a GitHub Discussion, paste its URL here.
+      placeholder: https://github.com/jvieille/ekr/discussions/...
     validations:
       required: false
 
   - type: checkboxes
     id: declarations
     attributes:
-      label: Contribution declarations
+      label: Public contribution
       options:
-        - label: I understand that this case is non-normative and does not make any implementation, product or technology canonical.
-          required: true
-        - label: I am authorised to disclose the material included in this issue publicly.
+        - label: I am authorised to disclose the material included in this issue publicly and understand that the case remains non-normative unless deliberately incorporated through the governed process.
           required: true

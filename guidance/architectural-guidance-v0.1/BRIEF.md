@@ -109,12 +109,15 @@ Contributors are explicitly encouraged to challenge the questions themselves, in
 
 Guidance V0.1 will be developed through a visible, governed loop:
 
-1. architectural questions, challenges, alternatives and implementation experience are discussed;
-2. sufficiently structured proposals, counterexamples, cases or evidence are recorded for review;
-3. contributions are triaged for relevance, evidence and status impact;
-4. accepted work may change Draft Guidance;
-5. Draft Guidance is reviewed against the canonical Working Definition, relevant evidence and the repository governance rules;
-6. a version becomes **Released Guidance** only through an explicit versioned release decision.
+1. architectural questions, challenges, alternatives and implementation experience may begin in Discussion, or directly as a structured Issue when already concrete;
+2. structured Issues become the normal tracking record for contributions that require evaluation or action;
+3. contributions are triaged for relevance, evidence, disposition and possible canonical impact;
+4. where repository material must change, a linked pull request implements the change and updates the current Draft Guidance when merged;
+5. release-targeted Issues and PRs may be grouped in a milestone for planning and traceability;
+6. Draft Guidance is reviewed against the canonical Working Definition, relevant evidence, linked contributions and repository governance rules;
+7. a version becomes **Released Guidance** only through an explicit versioned release decision, recorded with a version-specific Git tag, GitHub Release and changelog entry.
+
+The intended traceability chain is **release → PR → Issue → originating Discussion, where applicable**. A milestone, Issue acceptance or PR merge does not itself confer Released Guidance or Canonical status.
 
 A Guidance release does not by itself change the canonical EKR definition. Any material canonical-impact proposal follows the separate canonicality process.
 

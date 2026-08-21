@@ -15,8 +15,8 @@ body:
   - type: input
     id: citation
     attributes:
-      label: Source citation
-      description: Provide title, author or issuing body, version/date and publication information where applicable.
+      label: Source
+      description: Give the title and author, issuing body or publisher, with version/date where relevant.
       placeholder: Organisation/author — title — version/date
     validations:
       required: true
@@ -30,19 +30,10 @@ body:
     validations:
       required: true
 
-  - type: input
-    id: authority
-    attributes:
-      label: Authoritative body or publisher
-      description: Identify the standards body, institution, publisher, project or other source authority.
-    validations:
-      required: true
-
   - type: dropdown
     id: maturity
     attributes:
       label: Source maturity or status
-      description: Select the closest public status.
       options:
         - Published standard or formal specification
         - Official recommendation or normative document
@@ -55,32 +46,10 @@ body:
       required: true
 
   - type: textarea
-    id: affected_topic
-    attributes:
-      label: EKR or Guidance topic affected
-      description: Identify the claim, distinction, Guidance section, open question or architectural responsibility to which this source is relevant.
-    validations:
-      required: true
-
-  - type: dropdown
-    id: relation
-    attributes:
-      label: Claimed relationship
-      options:
-        - Supports an existing EKR or Guidance position
-        - Qualifies or narrows an existing position
-        - Challenges an existing position
-        - Shows an established approach already fulfils an EKR responsibility
-        - Provides background or terminology
-        - Other
-    validations:
-      required: true
-
-  - type: textarea
     id: relevance
     attributes:
-      label: Claimed relevance
-      description: Explain specifically what the source contributes. Avoid relying on the title alone.
+      label: EKR topic and claimed relevance
+      description: Identify the EKR claim, distinction, Guidance section, open question or architectural responsibility affected, and explain what the source supports, qualifies, challenges or clarifies.
     validations:
       required: true
 
@@ -88,16 +57,23 @@ body:
     id: limitations
     attributes:
       label: Limitations or scope conditions
-      description: Identify important scope, maturity, applicability or interpretation limits.
+      description: Optional. Identify important maturity, applicability, scope or interpretation limits.
+    validations:
+      required: false
+
+  - type: input
+    id: discussion
+    attributes:
+      label: Related Discussion
+      description: Optional. If this source was first explored in a GitHub Discussion, paste its URL here.
+      placeholder: https://github.com/jvieille/ekr/discussions/...
     validations:
       required: false
 
   - type: checkboxes
     id: declarations
     attributes:
-      label: Contribution declarations
+      label: Public contribution
       options:
-        - label: I have linked or cited the source rather than reproducing material I am not authorised to publish.
-          required: true
-        - label: I understand that submission or indexing does not imply EKR endorsement of the source or all of its propositions.
+        - label: I have linked or cited the source rather than reproducing material I am not authorised to publish, and understand that submission or indexing does not imply EKR endorsement.
           required: true
