@@ -99,6 +99,8 @@ For substantive repository changes, a pull request should normally link the Issu
 
 The normal target branch is `main`. Ordinary contributors normally work on a branch in their own fork and open a pull request against `jvieille/ekr:main` (using GitHub's cross-fork comparison where needed). Maintainers may work on a non-`main` branch in the repository or in a fork, but the change still enters `main` through a pull request.
 
+GitHub workflow states such as **Draft pull request**, **Open**, **Merged** or **Closed** are repository workflow states. They must not be confused with EKR artefact statuses such as **Draft Guidance** or **Released Guidance**.
+
 `main` is the protected **current public development state** of the repository. It is not synonymous with **Released Guidance**, and a permanent `draft` branch is not required. Draft/Released/Canonical are artefact statuses, not branch names.
 
 When a PR fully resolves an Issue, the preferred convention is `Closes #<issue>` so GitHub closes the Issue when the PR is merged into the default branch. When the PR is only one step in a larger Issue, use a normal cross-reference such as `Relates to #<issue>` and leave the Issue open.
