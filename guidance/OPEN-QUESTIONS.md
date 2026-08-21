@@ -1,8 +1,9 @@
-# EKR Architectural Guidance V0.1 — Initial Open Questions
+# EKR Architectural Guidance — Open Questions
 
-**Status: Draft Guidance — open-question backlog**
+**Status: Draft Guidance — open-question backlog**  
+**Current development target: V0.1**
 
-These questions are starting points for the development of EKR Architectural Guidance V0.1. They are intentionally open: the repository is seeking challenges, counterexamples, alternative formulations, implementation experience and relevant evidence.
+These questions are the current starting points for the V0.1 development cycle of EKR Architectural Guidance. They are intentionally open: the repository is seeking challenges, counterexamples, alternative formulations, implementation experience and relevant evidence.
 
 The questions themselves may be revised as the work develops.
 
@@ -54,4 +55,4 @@ A useful contribution may:
 - provide a primary reference or evidence source;
 - explain why a proposed EKR responsibility would be too broad, too narrow or placed at the wrong architectural boundary.
 
-See the repository [CONTRIBUTING.md](../../CONTRIBUTING.md) for contribution routes and status rules.
+See the repository [CONTRIBUTING.md](../CONTRIBUTING.md) for contribution routes and status rules.

@@ -1,10 +1,11 @@
-# EKR Architectural Guidance V0.1 — Development Brief
+# EKR Architectural Guidance — Development Brief
 
-**Status: Draft Guidance — seed brief**
+**Status: Draft Guidance**  
+**Current development target: V0.1**
 
 ## 1. Purpose
 
-EKR Architectural Guidance V0.1 is intended to translate the stable distinctions of the **Enterprise Knowledge Representation — Working Definition V0.1** into practical architectural questions that can be examined, challenged and refined through evidence and implementation experience.
+The current V0.1 development cycle of EKR Architectural Guidance is intended to translate the stable distinctions of the **Enterprise Knowledge Representation — Working Definition V0.1** into practical architectural questions that can be examined, challenged and refined through evidence and implementation experience.
 
 The Guidance should help an enterprise reason about what representation capability is required for a declared operational purpose, which responsibilities must be made explicit, where authority resides, how multiple representations can coexist, and what conditions are required for governed cross-boundary use.
 
@@ -25,7 +26,7 @@ The objective is **purposeful sufficiency**, not exhaustive representation of en
 
 ## 3. Non-goals
 
-Guidance V0.1 is not intended to be:
+The current V0.1 development cycle is not intended to produce:
 
 - a target architecture or mandatory technology stack;
 - a universal enterprise model or vocabulary;
@@ -67,7 +68,7 @@ One architectural requirement established by the Working Definition is an explic
 - identity and relationship principles;
 - common governance invariants.
 
-The Guidance should clarify the requirements and decision criteria applicable to this shared foundation, including the minimum commitments required for a declared interoperability scope, without turning it into one universal domain vocabulary or detailed enterprise decomposition. Guidance V0.1 does not select or specify a concrete foundation realisation.
+The Guidance should clarify the requirements and decision criteria applicable to this shared foundation, including the minimum commitments required for a declared interoperability scope, without turning it into one universal domain vocabulary or detailed enterprise decomposition. The current V0.1 development cycle does not select or specify a concrete foundation realisation.
 
 ### 4.5 Multiple viewpoints and UOD boundaries
 
@@ -107,7 +108,7 @@ Contributors are explicitly encouraged to challenge the questions themselves, in
 
 ## 6. Development and release method
 
-Guidance V0.1 will be developed through a visible, governed loop:
+The current Guidance development cycle is governed through a visible loop:
 
 1. architectural questions, challenges, alternatives and implementation experience may begin in Discussion, or directly as a structured Issue when already concrete;
 2. structured Issues become the normal tracking record for contributions that require evaluation or action;
@@ -131,7 +132,7 @@ Existing approaches should be assessed according to the responsibilities they ac
 
 This seed is adequate for public discussion when a reader who has only read the Working Definition can understand:
 
-- what Guidance V0.1 is intended to decide;
+- what the current V0.1 development cycle is intended to decide;
 - what it is explicitly not deciding;
 - how its initial sections are organised;
 - what questions remain open;
