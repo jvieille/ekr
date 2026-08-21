@@ -20,7 +20,7 @@ Establish the public EKR workspace with:
 - Discussions, structured Issues and pull requests;
 - a visible seed for the first EKR Architectural Guidance.
 
-The [initial Guidance V0.1 seed](guidance/architectural-guidance-v0.1/README.md) is now public as **Draft Guidance**, not a released reference architecture.
+The [current EKR Architectural Guidance workspace](guidance/README.md) is now public as **Draft Guidance**, not a released reference architecture.
 
 ## 3. Article 1 — next publication milestone
 
