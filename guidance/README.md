@@ -35,6 +35,9 @@ The **shared EKR representation foundation** is one architectural requirement ad
 
 The aim is to help assess architectural responsibilities without prescribing one product stack, one universal model or one mandatory implementation architecture.
 
+Evaluation should distinguish the architectural responsibilities an approach actually fulfils from the labels used to describe it.
+This is intended as a clarification of the current Guidance seed, not as a new architectural requirement.
+
 ## What the Guidance is not
 
 EKR Architectural Guidance is not, at this stage:
