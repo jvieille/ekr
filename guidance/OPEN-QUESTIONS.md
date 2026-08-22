@@ -41,7 +41,7 @@ The questions themselves may be revised as the work develops.
 
 ## Evidence and examples
 
-10. **What should worked examples or implementation cases demonstrate to provide useful evidence for the first Guidance release, and what would make them misleading?**
+10. **What should worked examples or implementation cases demonstrate to provide useful evidence for the first Guidance release, and what would make such examples or cases misleading?**
 
 ## How to contribute to these questions
 
