@@ -97,8 +97,6 @@ Security and sovereignty should be treated as representation and governance conc
 
 Develop non-normative candidate patterns and cases that test the Guidance against real architecture situations. Each pattern or example should state its context, assumptions, evidence, limitations and status.
 
-Examples illustrate or test Guidance; they do not become normative merely by being published in the repository.
-
 ## Open questions and contributions
 
 The current investigation backlog is maintained in [OPEN-QUESTIONS.md](OPEN-QUESTIONS.md). Contribution routes and the governed development and release process are described in [CONTRIBUTING.md](../CONTRIBUTING.md).
