@@ -13,7 +13,7 @@ The questions themselves may be revised as the work develops.
 
 ## Shared foundation and domain autonomy
 
-2. **Which commitments must belong to the shared EKR representation foundation, and which should remain UOD- or domain-specific?**
+2. **What needs to be shared across participating representations, and what should remain specific to a domain, purpose or viewpoint?**
 
 ## Authority and representation construction
 
