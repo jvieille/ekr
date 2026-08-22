@@ -12,25 +12,25 @@ The archived Working Definition remains the canonical public definition. This re
 
 ## 2. Repository and open-development mechanism — current
 
-Establish the public EKR workspace with:
+The public EKR workspace now provides:
 
 - governance and contribution rules;
 - explicit artefact statuses;
 - public canonicality policy and decision-record path;
 - Discussions, structured Issues and pull requests;
-- a visible seed for the first EKR Architectural Guidance.
+- an initial working draft of EKR Architectural Guidance V0.1.
 
-The [current EKR Architectural Guidance workspace](guidance/README.md) is now public as **Draft Guidance**, not a released reference architecture.
+The [EKR Architectural Guidance Working Draft V0.1](guidance/ARCHITECTURAL-GUIDANCE.md) is public with **Draft Guidance** status, not as a released reference architecture.
 
 ## 3. Article 1 — next publication milestone
 
 Complete and release **“Data Accessibility Is Not Understanding”** after the repository mechanism is operational and its contribution routes have been tested.
 
-The article will point to the actual repository, Guidance seed and contribution mechanisms rather than describe them as forthcoming.
+The article will point to the actual repository, working draft and contribution mechanisms rather than describe them as forthcoming.
 
 ## 4. EKR Architectural Guidance V0.1 — first open-development output
 
-Develop the first Guidance through public questions, challenges, implementation experience, references and evidence.
+Develop the working draft through public questions, challenges, implementation experience, references, evidence and reviewed pull requests until it is ready for a first explicit release.
 
 Its role is to turn stable EKR distinctions into architectural decision questions, minimum expectations, candidate patterns, evaluation criteria and explicit open questions. It is not intended to prescribe one target architecture or technology stack.
 
@@ -54,4 +54,4 @@ The sequence is deliberately evidence-driven:
 
 Specialised assessments may branch from this cycle where public EKR requirements and sufficient evidence make them useful.
 
-The repository may expose preparatory Draft Guidance before Article 1 so that the article's call to contribution lands on a real, testable development process.
+The repository exposes the initial Working Draft V0.1 before Article 1 so that the article's call to contribution lands on a real, testable development process.
