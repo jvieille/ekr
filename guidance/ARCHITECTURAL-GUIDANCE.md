@@ -40,15 +40,7 @@ EKR Architectural Guidance V0.1 is not intended to provide:
 
 Where existing technologies or standards already fulfil relevant responsibilities, the Guidance should make that contribution visible rather than reinvent it.
 
-## 4. Current architectural structure
-
-The structure below is deliberately provisional. It organises the Guidance as it develops and may change as evidence, challenges and implementation experience are incorporated.
-
-### 4.1 Purpose and scope discipline
-
-Start from an operational interaction or decision need. Define purpose, purposeful sufficiency, explicit limits and the criteria by which a representation should later be judged useful.
-
-### 4.2 Architecture responsibility lens
+## 4. Architecture responsibility lens
 
 Use the responsibility sequence:
 
@@ -58,13 +50,13 @@ The sequence is an architectural decision lens, not a product stack. One technol
 
 Evaluation should distinguish the architectural responsibilities an approach actually fulfils from the labels used to describe it. The Guidance should help identify gaps, overlaps and unclear ownership.
 
-### 4.3 Authority and representation construction
+## 5. Authority and representation construction
 
 Examine source-derived, EKR-authoritative and combined construction modes while preserving applicable authority, provenance, scope, version and validity.
 
 Distinguish making source knowledge usable across boundaries from transferring ownership or authority over that knowledge.
 
-### 4.4 Shared EKR representation foundation
+## 6. Shared EKR representation foundation
 
 One architectural requirement established by the Working Definition is an explicit shared EKR representation foundation. The Guidance addresses its four dimensions:
 
@@ -77,18 +69,18 @@ The Guidance should clarify the requirements and decision criteria applicable to
 
 Working Draft V0.1 does not select or specify a concrete foundation realisation.
 
-### 4.5 Multiple viewpoints and UOD boundaries
+## 7. Multiple viewpoints and UOD boundaries
 
 Preserve legitimate plurality of representations, vocabularies, structures, granularities and authorities. Examine what context is needed to make different representations identifiable and relatable, and where explicit mapping or semantic mediation remains necessary.
 
-### 4.6 Lifecycle, conformance, validation and fitness
+## 8. Lifecycle, conformance, validation and fitness
 
 Address version, validity, dependency, change, correction and retirement. Keep distinct:
 
 - whether a representation satisfies the applicable structural, governance and publication constraints; and
 - whether that admissible representation is actually fit for its declared operational purpose and assurance level.
 
-### 4.7 Security, classification and sovereignty
+## 9. Security, classification and sovereignty
 
 Address representation-level concerns that may remain even when data-access controls already exist, including:
 
@@ -101,38 +93,12 @@ Address representation-level concerns that may remain even when data-access cont
 
 Security and sovereignty should be treated as representation and governance concerns, not only transport or storage concerns.
 
-### 4.8 Patterns, evidence and examples
+## 10. Patterns, evidence and examples
 
 Develop non-normative candidate patterns and cases that test the Guidance against real architecture situations. Each pattern or example should state its context, assumptions, evidence, limitations and status.
 
 Examples illustrate or test Guidance; they do not become normative merely by being published in the repository.
 
-## 5. Open development questions
+## Open questions and contributions
 
-The current investigation backlog is maintained in [OPEN-QUESTIONS.md](OPEN-QUESTIONS.md). These questions are not assumptions that contributors are expected to confirm.
-
-Contributors are explicitly encouraged to challenge the questions themselves, including their wording, scope and missing concerns.
-
-As positions become sufficiently supported and reviewed, relevant material can be incorporated into this working draft through the governed contribution process.
-
-## 6. Development and release method
-
-The Guidance develops through a visible loop:
-
-1. architectural questions, challenges, alternatives and implementation experience may begin in Discussion, or directly as a structured Issue when already concrete;
-2. structured Issues become the normal tracking record for contributions that require evaluation or action;
-3. contributions are triaged for relevance, evidence, disposition and possible canonical impact;
-4. where Guidance or repository material must change, a linked pull request implements the change and updates the current Draft Guidance when merged;
-5. release-targeted Issues and PRs may be grouped in a milestone for planning and traceability;
-6. Draft Guidance is reviewed against the canonical Working Definition, relevant evidence, linked contributions and repository governance rules;
-7. a version becomes **Released Guidance** only through an explicit versioned release decision, recorded with a version-specific Git tag, GitHub Release and changelog entry.
-
-The intended traceability chain is **release → PR → Issue → originating Discussion, where applicable**. A milestone, Issue acceptance or PR merge does not itself confer Released Guidance or Canonical status.
-
-A Guidance release does not by itself change the canonical EKR definition. Any material canonical-impact proposal follows the separate canonicality process.
-
-## 7. Evidence principle
-
-The Guidance should prefer primary standards, specifications, research and sufficiently described implementation experience where they are available. Evidence should be used to support, qualify or challenge propositions, not merely to accumulate references.
-
-Existing approaches should be assessed according to the responsibilities they actually fulfil and the scope in which they fulfil them, rather than being treated as competing product categories.
+The current investigation backlog is maintained in [OPEN-QUESTIONS.md](OPEN-QUESTIONS.md). Contribution routes and the governed development and release process are described in [CONTRIBUTING.md](../CONTRIBUTING.md).
