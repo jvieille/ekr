@@ -13,7 +13,7 @@ The questions themselves may be revised as the work develops.
 
 ## Shared foundation and domain autonomy
 
-2. **What needs to be shared across participating representations, and what should remain specific to a domain, purpose or viewpoint?**
+2. **Which commitments must belong to the shared EKR representation foundation, and which should remain domain-specific?**
 
 ## Authority and representation construction
 
@@ -33,7 +33,7 @@ The questions themselves may be revised as the work develops.
 
 ## Security, classification and sovereignty
 
-8. **What representation-level security and classification controls are required beyond data access control?**
+8. **What representation-level security, classification and sovereignty controls are required beyond data access control?**
 
 ## Relationship to established approaches
 
@@ -41,7 +41,7 @@ The questions themselves may be revised as the work develops.
 
 ## Evidence and examples
 
-10. **What should the first worked example or implementation case demonstrate to provide useful evidence for the first Guidance release, and what would make such an example misleading?**
+10. **What should worked examples or implementation cases demonstrate to provide useful evidence for the first Guidance release, and what would make them misleading?**
 
 ## How to contribute to these questions
 
