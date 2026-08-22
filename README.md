@@ -58,7 +58,7 @@ Status belongs to artefacts and decisions, not to people, popularity or contribu
 
 ## Current development path
 
-The Working Definition V0.1 is published. The [current EKR Architectural Guidance workspace](guidance/README.md) currently develops **EKR Architectural Guidance V0.1** as **Draft Guidance**, while the repository continues to establish and test the public contribution process. The near-term sequence is described in [ROADMAP.md](ROADMAP.md).
+The Working Definition V0.1 is published. An initial [EKR Architectural Guidance Working Draft V0.1](guidance/ARCHITECTURAL-GUIDANCE.md) is live in the repository with **Draft Guidance** status and is open to challenge and improvement. The near-term sequence is described in [ROADMAP.md](ROADMAP.md).
 
 The protected `main` branch carries the current public development state. Draft/Released/Canonical are artefact statuses rather than branch names: versioned Guidance releases are fixed by Git tags and GitHub Releases, while new draft work continues through pull requests to `main`.
 

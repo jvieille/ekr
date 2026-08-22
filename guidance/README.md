@@ -1,13 +1,13 @@
 # EKR Architectural Guidance
 
 **Status: Draft Guidance**  
-**Current development target: V0.1**
+**Current working draft: V0.1**
 
 This directory is the stable public workspace for the development of **EKR Architectural Guidance**.
 
 The path is intentionally not versioned. The protected `main` branch carries the current public development state, while each **Released Guidance** version is preserved as an immutable snapshot through a version-specific Git tag and GitHub Release.
 
-The current development target is **EKR Architectural Guidance V0.1**. It is deliberately exposed as Draft Guidance so that its scope, structure, assumptions and unresolved architectural questions can be challenged before a first release.
+An initial working draft of **EKR Architectural Guidance V0.1** is now public. It is deliberately incomplete and open to challenge and improvement before a first release.
 
 Nothing in this directory is **Canonical** unless explicitly identified as such. The canonical public definition of EKR remains the archived **Enterprise Knowledge Representation — Working Definition V0.1**:
 
@@ -15,7 +15,7 @@ https://doi.org/10.5281/zenodo.21914714
 
 ## What this area contains
 
-- [BRIEF.md](BRIEF.md) — purpose, scope, non-goals, planned structure and development method;
+- [ARCHITECTURAL-GUIDANCE.md](ARCHITECTURAL-GUIDANCE.md) — the current EKR Architectural Guidance Working Draft V0.1;
 - [OPEN-QUESTIONS.md](OPEN-QUESTIONS.md) — the current open-question backlog for the Guidance;
 - [CHANGELOG.md](CHANGELOG.md) — lifecycle record for Draft and Released Guidance versions.
 
@@ -35,9 +35,6 @@ The **shared EKR representation foundation** is one architectural requirement ad
 
 The aim is to help assess architectural responsibilities without prescribing one product stack, one universal model or one mandatory implementation architecture.
 
-Evaluation should distinguish the architectural responsibilities an approach actually fulfils from the labels used to describe it.
-This is intended as a clarification of the current Guidance seed, not as a new architectural requirement.
-
 ## What the Guidance is not
 
 EKR Architectural Guidance is not, at this stage:
@@ -52,7 +49,7 @@ EKR Architectural Guidance is not, at this stage:
 
 ## Status lifecycle
 
-Guidance material may appear here as **Draft Guidance** while it is being challenged and reviewed. Draft Guidance may change materially and is not yet an accepted EKR recommendation.
+The current **Working Draft V0.1** has **Draft Guidance** status. It may change materially and is not yet an accepted EKR recommendation.
 
 A version becomes **Released Guidance** only through an explicit versioned release decision after review. Released Guidance remains evolvable and does not automatically become Canonical.
 
@@ -69,13 +66,14 @@ Release-targeted work may be grouped in a milestone. A milestone expresses inten
 
 ## Current development target — V0.1
 
-The current V0.1 development cycle is intended to translate stable EKR distinctions into practical architectural questions that can be examined, challenged and refined through evidence and implementation experience.
+The current working draft translates stable EKR distinctions into practical architectural questions and initial guidance that can be examined, challenged and refined through evidence and implementation experience.
 
-The current seed defines:
+It currently contains:
 
 - purpose and scope discipline;
 - a provisional architectural structure;
-- initial open questions;
+- initial architectural positions and decision lenses;
+- links to open questions;
 - an evidence-driven development method;
 - explicit separation between Draft Guidance, Released Guidance and Canonical EKR status.
 
@@ -97,7 +95,7 @@ A Discussion, Issue, pull request, milestone assignment or merged Draft Guidance
 
 Development is evidence-driven rather than calendar-driven. Draft material may change substantially as questions, counterexamples, implementation experience and references are reviewed.
 
-## How to challenge the current Guidance
+## How to challenge or improve the working draft
 
 Useful contributions include those that:
 
@@ -105,6 +103,7 @@ Useful contributions include those that:
 - provide a counterexample to a proposed distinction or expectation;
 - show where an existing standard, information model, ontology, platform or architecture already fulfils an EKR responsibility well;
 - provide implementation experience showing that a proposed requirement would be too heavy, too weak or operationally unrealistic;
-- suggest primary references or evidence that should support, qualify or challenge a Guidance proposition.
+- suggest primary references or evidence that should support, qualify or challenge a Guidance proposition;
+- propose a precise textual improvement to the working draft through a linked pull request.
 
 See [CONTRIBUTING.md](../CONTRIBUTING.md) for contribution routes and status rules, and the repository [ROADMAP](../ROADMAP.md) for the public development sequence.
