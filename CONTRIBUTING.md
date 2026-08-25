@@ -2,7 +2,7 @@
 
 Thank you for helping challenge, test and improve Enterprise Knowledge Representation and its Architectural Guidance.
 
-EKR development is intentionally open to questions, counterexamples, evidence, implementation experience, worked examples and alternative approaches. Contribution is open; **publication and canonical authority remain governed**.
+EKR development is intentionally open to questions, counterexamples, evidence, implementation experience, worked examples, reader aids and alternative approaches. Contribution is open; **publication and canonical authority remain governed**.
 
 The workflow is designed to be lightweight: start at the level that matches the maturity of the contribution, and add structure only when the work needs to be tracked or changed.
 
@@ -17,7 +17,8 @@ Use [GitHub Discussions](https://github.com/jvieille/ekr/discussions) for:
 - early challenges or counterexamples;
 - questions about existing EKR material;
 - exploration of references and evidence before a structured submission;
-- early exploration of a worked example before it is ready as a durable artefact.
+- early exploration of a worked example before it is ready as a durable artefact;
+- early discussion of a possible reader aid when its scope or source boundary is not yet clear.
 
 A Discussion has **Discussion** status and implies no decision or acceptance.
 
@@ -30,7 +31,10 @@ Use the [structured Issue forms](https://github.com/jvieille/ekr/issues/new/choo
 - **Architectural proposal** — a proposed requirement, distinction, pattern or decision question;
 - **Counterexample / challenge** — a case that may falsify, overconstrain or expose ambiguity in current framing or Draft Guidance;
 - **Implementation experience / case** — observed experience from a system, architecture, standard, project or pilot;
-- **Reference / evidence** — a primary source, standard, paper, specification or other relevant evidence.
+- **Reference / evidence** — a primary source, standard, paper, specification or other relevant evidence;
+- **Reader aid / documentation clarification** — a glossary, reading guide, FAQ, terminology map, cross-reference or similar explanatory aid tied to an existing published EKR source.
+
+A reader aid must remain explanatory. Do not use the Reader aid form to propose new architectural requirements, recommendations, implementation patterns or design Guidance; use the applicable architectural proposal or Guidance workflow instead.
 
 A substantial worked or explanatory example may also be tracked through an Issue when it raises architectural questions or needs coordinated review. A concrete example whose purpose, source basis and scope are already clear may instead arrive directly as a pull request to `examples/`.
 
@@ -65,6 +69,8 @@ For substantive changes, a PR should normally be linked to an Issue. Use:
 - `Closes #123` when the PR fully resolves the Issue and should close it when merged into `main`;
 - `Relates to #123` when the PR contributes to the Issue but does not resolve it completely.
 
+A new reader aid should normally begin with a **Reader aid / documentation clarification** Issue and then be submitted through a linked pull request. Small corrections to an existing reader aid may be submitted directly by PR when their scope is self-evident and they do not change the interpretation boundary.
+
 A self-contained worked example may be submitted without a prior Issue when its source basis, intended purpose and non-normative status are explicit. A small housekeeping or typographical change may also be submitted without a prior Issue; state that explicitly in the PR description.
 
 A merged PR may change Draft Guidance or repository material. It does **not** automatically change a canonical EKR anchor or make Draft Guidance into Released Guidance.
@@ -78,6 +84,7 @@ Please distinguish clearly between:
 - a proposed architectural position;
 - a primary or authoritative reference;
 - a contributor-created illustrative extension;
+- a plain-language reader aid tied to published EKR source material;
 - a limitation or unresolved question.
 
 For references and evidence, provide enough information to assess:
@@ -97,13 +104,13 @@ A useful challenge may show that a current distinction is ambiguous, too broad, 
 
 Please provide enough context for others to understand the boundary conditions. A strong counterexample is more useful than a generic statement of disagreement.
 
-## 4. Worked examples and implementation experience
+## 4. Worked examples, reader aids and implementation experience
 
-Material in `examples/` enters the repository with **Example** status unless explicitly promoted through another governed process. It is non-normative and does not make a technology, product or architecture an EKR reference implementation.
-
-Two different forms are useful and should not be confused.
+Different non-canonical contribution types serve different purposes and should not be confused with Architectural Guidance.
 
 ### 4.1 Worked or explanatory example
+
+Material in `examples/` enters the repository with **Example** status unless explicitly promoted through another governed process. It is non-normative and does not make a technology, product or architecture an EKR reference implementation.
 
 A worked example starts from published EKR concepts and makes them concrete through a deliberately bounded scenario, object, process or question. It may be pedagogical, exploratory or designed to test whether EKR distinctions and Draft Guidance can be applied consistently.
 
@@ -119,17 +126,40 @@ A worked example should identify:
 
 Use [`examples/EXAMPLE-TEMPLATE.md`](examples/EXAMPLE-TEMPLATE.md) as a lightweight starting point. A prior Issue is recommended when the example raises a substantive architectural question or needs coordinated investigation, but a mature self-contained example may be proposed directly by pull request.
 
-### 4.2 Implementation experience / case
+### 4.2 Reader aid
+
+Material under `working-definition/reader-aids/` is contributor-authored explanatory repository material tied to the canonical Working Definition or another specifically identified published source.
+
+A reader aid helps readers **understand, navigate or interpret the source it explains**. It must not introduce new EKR requirements, recommendations, architectural positions or implementation guidance. If material develops recommendations, design rules, architectural decisions or implementation patterns that remain meaningful independently of the source being explained, it belongs in Architectural Guidance or another appropriate repository path.
+
+Typical reader aids include glossaries, reading guides, FAQs, terminology or concept maps, and cross-reference/navigation aids.
+
+A reader aid should:
+
+- identify its author;
+- identify the published source it explains;
+- state clearly that it is non-canonical;
+- distinguish plain-language explanation from canonical wording;
+- keep substantive statements traceable to that source, except for clearly identified pedagogical explanations that do not extend its meaning;
+- avoid silently changing EKR boundaries.
+
+A reader aid is **not a separate EKR artefact status**. Publication or merge does not make it Canonical, Released Guidance, Draft Guidance or normative.
+
+A useful boundary test is: **if a statement would still function as an independent EKR recommendation after removing the source document from view, it probably does not belong in a reader aid.**
+
+See [`working-definition/reader-aids/README.md`](working-definition/reader-aids/README.md) for the directory-specific rules.
+
+### 4.3 Implementation experience / case
 
 An implementation case reports observed experience from an actual system, architecture, standard, project or pilot. State the context, objectives, constraints, observed outcome and limitations. Distinguish observation from interpretation, and avoid generalising from a single case without evidence.
 
 Implementation experience should normally enter through the [Implementation experience / case Issue form](https://github.com/jvieille/ekr/issues/new/choose) before a durable example artefact is added to `examples/`.
 
-### 4.3 What merge means
+### 4.4 What merge means
 
-Merge means only that the material has been accepted into the repository with **Example** status. It does not make the example normative, canonical, a reference implementation or part of Released Guidance.
+Merge means only that the material has been accepted into the repository in its declared contribution role. It does not make an example normative or canonical, make a reader aid Guidance, establish a reference implementation, or alter a canonical anchor.
 
-If review of an example suggests that Draft Guidance or a canonical EKR proposition should change, track that question separately through the applicable Issue and governance path rather than implying the change through the example itself.
+If review of an example or reader aid suggests that Draft Guidance or a canonical EKR proposition should change, track that question separately through the applicable Issue and governance path rather than implying the change through the artefact itself.
 
 ## 5. Public scope, security and intellectual-property boundary
 
@@ -143,6 +173,8 @@ If a useful contribution depends on information that cannot be disclosed, descri
 
 The repository uses these public statuses: **Canonical, Released Guidance, Draft Guidance, Proposal, Example, Discussion**.
 
+A reader aid is a document type, not an additional EKR status.
+
 A contribution does not acquire EKR authority through popularity, acceptance for investigation or merge alone. If review shows that a proposal would materially affect a canonical EKR distinction, material public claim, current public scope or publication boundary, or canonical anchor, the maintainer marks it for escalation under the public [Canonicality Policy](governance/CANONICAL-POLICY.md).
 
 Contributors are not expected to determine canonical impact themselves.
@@ -152,6 +184,8 @@ Contributors are not expected to determine canonical impact themselves.
 The normal workflow is:
 
 **Discussion (optional) → structured Issue → triage → PR where a repository change is needed → Draft Guidance / repository update → release review → versioned release**
+
+A new reader aid normally follows the shorter repository path **Discussion (optional) → Reader aid Issue → PR → non-canonical reader aid**. It does not enter the Guidance release path unless it separately raises a Guidance question.
 
 A self-contained worked example may use the shorter path **Discussion (optional) → PR → Example**, provided its purpose, source basis, attribution and limitations are explicit. This shorter path does not bypass canonical-impact review if the example exposes a canonical question.
 
