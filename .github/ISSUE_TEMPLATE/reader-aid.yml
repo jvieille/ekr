@@ -1,0 +1,78 @@
+name: Reader aid or documentation clarification
+description: Propose a glossary, reading guide, FAQ, concept map or similar aid tied to an existing published EKR source.
+title: "[Reader aid] "
+labels:
+  - "triage"
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this form for explanatory material whose purpose is to help readers understand, navigate or interpret an existing published EKR source.
+
+        Do **not** use it to propose new architectural requirements, recommendations, implementation patterns or design guidance. Those belong in the applicable architectural proposal or Guidance workflow.
+
+        A reader aid is non-canonical explanatory repository material and is not a separate EKR artefact status.
+
+  - type: dropdown
+    id: type
+    attributes:
+      label: Reader-aid type
+      options:
+        - Glossary
+        - Reading guide
+        - FAQ
+        - Terminology or concept map
+        - Cross-reference or navigation aid
+        - Other explanatory aid
+    validations:
+      required: true
+
+  - type: textarea
+    id: purpose
+    attributes:
+      label: Purpose and intended readers
+      description: Explain what reading difficulty or navigation need this aid addresses and who it is intended to help.
+    validations:
+      required: true
+
+  - type: input
+    id: source
+    attributes:
+      label: Published EKR source being explained
+      description: Identify the canonical or other published EKR source, including version or stable link where possible.
+      placeholder: Enterprise Knowledge Representation — Working Definition V0.1 — DOI or repository link
+    validations:
+      required: true
+
+  - type: textarea
+    id: boundary
+    attributes:
+      label: Interpretation and scope boundary
+      description: Explain how the proposed aid remains explanatory and avoids introducing new EKR requirements, recommendations, architectural positions or implementation guidance.
+    validations:
+      required: true
+
+  - type: textarea
+    id: artefact
+    attributes:
+      label: Proposed artefact or change
+      description: Describe the file you propose to add or materially change. Link a draft if one is already public and appropriate to share.
+    validations:
+      required: true
+
+  - type: input
+    id: discussion
+    attributes:
+      label: Related Discussion
+      description: Optional. If the reader aid was first explored in a GitHub Discussion, paste its URL here.
+      placeholder: https://github.com/jvieille/ekr/discussions/...
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: declarations
+    attributes:
+      label: Public contribution
+      options:
+        - label: I am authorised to publish the submitted material and understand that a reader aid is non-canonical explanatory material that does not amend the source it explains or become Guidance through merge.
+          required: true

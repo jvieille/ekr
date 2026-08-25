@@ -21,8 +21,10 @@ For that reason, this directory intentionally points to the archived version rat
 
 Any future change to a canonical EKR anchor follows the public [Canonicality Policy](../governance/CANONICAL-POLICY.md) and takes effect only through a controlled new version or release.
 
-## Reader companions
+## Reader aids
 
-Contributor-authored explanatory material may be maintained under [`companions/`](companions/). These documents are intended to help readers navigate the canonical Working Definition without modifying or replacing it.
+Contributor-authored explanatory material tied to the canonical Working Definition may be maintained under [`reader-aids/`](reader-aids/).
 
-Companions are **non-canonical**. Each companion identifies its author and source boundary, and the canonical English Working Definition V0.1 controls wherever precision matters.
+A reader aid helps readers understand, navigate or interpret the published Working Definition without introducing new EKR requirements, recommendations, architectural positions or implementation guidance. Material that develops such positions belongs in Architectural Guidance or another appropriate repository path instead.
+
+Reader aids are **non-canonical** and are not a separate EKR artefact status. Each reader aid identifies its author and source boundary, and the canonical English Working Definition V0.1 controls wherever precision matters.
