@@ -2,7 +2,7 @@
 
 **Public development workspace for Enterprise Knowledge Representation and EKR Architectural Guidance.**
 
-This repository supports open discussion, structured proposals, challenges, implementation experience, evidence, examples and the governed development of EKR Architectural Guidance.
+This repository supports open discussion, structured proposals, challenges, implementation experience, evidence, examples, reader aids and the governed development of EKR Architectural Guidance.
 
 ## Canonical public definition
 
@@ -21,7 +21,7 @@ EKR is not defined by one product, platform, database, ontology, knowledge graph
 
 ## Purpose of this repository
 
-The repository exists to make EKR development visible, challengeable and evidence-driven while keeping the status of every contribution explicit.
+The repository exists to make EKR development visible, challengeable and evidence-driven while keeping the status and role of every contribution explicit.
 
 It provides routes to:
 
@@ -29,6 +29,8 @@ It provides routes to:
 - submit structured proposals and counterexamples;
 - contribute implementation experience and cases;
 - submit references and evidence;
+- contribute worked examples;
+- contribute non-canonical reader aids tied to published EKR sources;
 - develop and review Draft Guidance;
 - publish versioned guidance when it reaches an accepted maturity;
 - record public decisions that materially affect canonical EKR propositions.
@@ -46,12 +48,13 @@ A contribution does **not** become **Released Guidance** or **Canonical** merely
 | **Example** | A non-normative illustration, implementation experience or case used to test guidance. |
 | **Discussion** | A conversation, question, challenge or exploration with no acquired EKR status. |
 
-Status belongs to artefacts and decisions, not to people, popularity or contributor count.
+Status belongs to artefacts and decisions, not to people, popularity or contributor count. Reader aids are a document type, not an additional EKR status.
 
 ## How to participate
 
 - **Discuss** broad questions, alternatives and early challenges in [GitHub Discussions](https://github.com/jvieille/ekr/discussions). Discussion is optional when a contribution is already concrete.
-- **Submit** structured proposals, counterexamples, implementation experience or references/evidence through the [structured Issue forms](https://github.com/jvieille/ekr/issues/new/choose).
+- **Submit** structured proposals, counterexamples, implementation experience, references/evidence, or reader-aid/documentation clarifications through the [structured Issue forms](https://github.com/jvieille/ekr/issues/new/choose).
+- **Contribute reader aids** only as explanatory material tied to an existing published EKR source; they must not introduce new requirements, recommendations or implementation Guidance. See [`working-definition/reader-aids/`](working-definition/reader-aids/).
 - **Propose precise text changes** through pull requests, normally linked to the Issue they implement.
 - **Follow the contribution lifecycle** in [CONTRIBUTING.md](CONTRIBUTING.md), including the traceability path from Discussions to Issues, PRs and versioned releases.
 - Read [GOVERNANCE.md](GOVERNANCE.md) and the public [Canonicality Policy](governance/CANONICAL-POLICY.md) to understand decision rights and status transitions.
