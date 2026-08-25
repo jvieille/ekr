@@ -2,7 +2,7 @@
 
 Thank you for helping challenge, test and improve Enterprise Knowledge Representation and its Architectural Guidance.
 
-EKR development is intentionally open to questions, counterexamples, evidence, implementation experience and alternative approaches. Contribution is open; **publication and canonical authority remain governed**.
+EKR development is intentionally open to questions, counterexamples, evidence, implementation experience, worked examples and alternative approaches. Contribution is open; **publication and canonical authority remain governed**.
 
 The workflow is designed to be lightweight: start at the level that matches the maturity of the contribution, and add structure only when the work needs to be tracked or changed.
 
@@ -16,7 +16,8 @@ Use [GitHub Discussions](https://github.com/jvieille/ekr/discussions) for:
 - conceptual debate and alternatives;
 - early challenges or counterexamples;
 - questions about existing EKR material;
-- exploration of references and evidence before a structured submission.
+- exploration of references and evidence before a structured submission;
+- early exploration of a worked example before it is ready as a durable artefact.
 
 A Discussion has **Discussion** status and implies no decision or acceptance.
 
@@ -30,6 +31,8 @@ Use the [structured Issue forms](https://github.com/jvieille/ekr/issues/new/choo
 - **Counterexample / challenge** — a case that may falsify, overconstrain or expose ambiguity in current framing or Draft Guidance;
 - **Implementation experience / case** — observed experience from a system, architecture, standard, project or pilot;
 - **Reference / evidence** — a primary source, standard, paper, specification or other relevant evidence.
+
+A substantial worked or explanatory example may also be tracked through an Issue when it raises architectural questions or needs coordinated review. A concrete example whose purpose, source basis and scope are already clear may instead arrive directly as a pull request to `examples/`.
 
 Opening or triaging an Issue does not mean its proposed conclusion has been accepted.
 
@@ -62,7 +65,7 @@ For substantive changes, a PR should normally be linked to an Issue. Use:
 - `Closes #123` when the PR fully resolves the Issue and should close it when merged into `main`;
 - `Relates to #123` when the PR contributes to the Issue but does not resolve it completely.
 
-A small housekeeping or typographical change may be submitted without a prior Issue; state that explicitly in the PR description.
+A self-contained worked example may be submitted without a prior Issue when its source basis, intended purpose and non-normative status are explicit. A small housekeeping or typographical change may also be submitted without a prior Issue; state that explicitly in the PR description.
 
 A merged PR may change Draft Guidance or repository material. It does **not** automatically change a canonical EKR anchor or make Draft Guidance into Released Guidance.
 
@@ -74,6 +77,7 @@ Please distinguish clearly between:
 - an interpretation;
 - a proposed architectural position;
 - a primary or authoritative reference;
+- a contributor-created illustrative extension;
 - a limitation or unresolved question.
 
 For references and evidence, provide enough information to assess:
@@ -93,11 +97,39 @@ A useful challenge may show that a current distinction is ambiguous, too broad, 
 
 Please provide enough context for others to understand the boundary conditions. A strong counterexample is more useful than a generic statement of disagreement.
 
-## 4. Implementation experience and examples
+## 4. Worked examples and implementation experience
 
-Implementation cases enter the repository with **Example** status unless explicitly promoted through another governed process. They are non-normative and do not make a technology, product or architecture an EKR reference implementation.
+Material in `examples/` enters the repository with **Example** status unless explicitly promoted through another governed process. It is non-normative and does not make a technology, product or architecture an EKR reference implementation.
 
-State the context, objectives, constraints, observed outcome and limitations. Avoid generalising from a single case without evidence.
+Two different forms are useful and should not be confused.
+
+### 4.1 Worked or explanatory example
+
+A worked example starts from published EKR concepts and makes them concrete through a deliberately bounded scenario, object, process or question. It may be pedagogical, exploratory or designed to test whether EKR distinctions and Draft Guidance can be applied consistently.
+
+A worked example should identify:
+
+- the EKR concepts or Guidance questions it illustrates or tests;
+- the context and intended purpose;
+- assumptions and simplifications;
+- the published EKR material on which it is based;
+- any contributor-created extension beyond that source material;
+- limitations and open questions;
+- contributor and source attribution.
+
+Use [`examples/EXAMPLE-TEMPLATE.md`](examples/EXAMPLE-TEMPLATE.md) as a lightweight starting point. A prior Issue is recommended when the example raises a substantive architectural question or needs coordinated investigation, but a mature self-contained example may be proposed directly by pull request.
+
+### 4.2 Implementation experience / case
+
+An implementation case reports observed experience from an actual system, architecture, standard, project or pilot. State the context, objectives, constraints, observed outcome and limitations. Distinguish observation from interpretation, and avoid generalising from a single case without evidence.
+
+Implementation experience should normally enter through the [Implementation experience / case Issue form](https://github.com/jvieille/ekr/issues/new/choose) before a durable example artefact is added to `examples/`.
+
+### 4.3 What merge means
+
+Merge means only that the material has been accepted into the repository with **Example** status. It does not make the example normative, canonical, a reference implementation or part of Released Guidance.
+
+If review of an example suggests that Draft Guidance or a canonical EKR proposition should change, track that question separately through the applicable Issue and governance path rather than implying the change through the example itself.
 
 ## 5. Public scope, security and intellectual-property boundary
 
@@ -120,6 +152,8 @@ Contributors are not expected to determine canonical impact themselves.
 The normal workflow is:
 
 **Discussion (optional) → structured Issue → triage → PR where a repository change is needed → Draft Guidance / repository update → release review → versioned release**
+
+A self-contained worked example may use the shorter path **Discussion (optional) → PR → Example**, provided its purpose, source basis, attribution and limitations are explicit. This shorter path does not bypass canonical-impact review if the example exposes a canonical question.
 
 ```mermaid
 flowchart LR
