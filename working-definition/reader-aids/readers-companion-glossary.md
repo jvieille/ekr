@@ -490,5 +490,3 @@ The references show established bodies of work on which the Working Definition b
 ---
 
 Prepared by **Bill Bosler** as a reader’s companion to _Enterprise Knowledge Representation — Working Definition V0.1_. This document is explanatory and non-canonical. Where precision matters, the canonical English V0.1 controls.
-
-**Submission note:** This reviewed version follows the repository reader-aid boundary specified by Jean Vieille: it explains and organizes concepts already present in the Working Definition and does not add PAIPW-specific requirements, architectural recommendations, implementation patterns or design guidance.
