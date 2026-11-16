@@ -65,6 +65,7 @@ Integrated candidate architectural material from:
 - Jean Vieille, *Distributed Knowledge Representations, Shared Foundation and Semantic Interfaces*, Version 1.0. DOI: https://doi.org/10.5281/zenodo.24284087
 - Jean Vieille, *FCP-PILOT-01: Candidate Foundation Conformance Profile — Investigation V0.4*. DOI: https://doi.org/10.5281/zenodo.24284040
 - [Architectural Proposal Issue #21](https://github.com/jvieille/ekr/issues/21)
+- [Pull Request #24](https://github.com/jvieille/ekr/pull/24)
 - [Architectural Guidance Transfer Note](../proposals/ARCHITECTURAL-GUIDANCE-TRANSFER-2026-11-16.md)
 
 The working draft now includes:
