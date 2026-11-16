@@ -19,6 +19,16 @@ EKR is a technology-independent enterprise-capability framing concerned with how
 
 EKR is not defined by one product, platform, database, ontology, knowledge graph, Unified Namespace architecture or universal enterprise model. Existing technologies, standards, information models and semantic approaches may contribute to an EKR architecture according to the responsibilities they fulfil.
 
+## Published research
+
+Published research develops and challenges the EKR framing without automatically changing canonical EKR positions or conferring Guidance status.
+
+- **Article 1 — _Beyond Data: Why Knowledge Representation Is an Enterprise Architecture Concern_** (2026). DOI: https://doi.org/10.5281/zenodo.22918368
+- **Article 2 — _Distributed Knowledge Representations, Shared Foundation and Semantic Interfaces_**, Version 1.0 (16 November 2026). DOI: https://doi.org/10.5281/zenodo.24284087
+- **FCP-PILOT-01 — _Candidate Foundation Conformance Profile — Investigation V0.4_** (16 November 2026). Experimental, non-normative research note. DOI: https://doi.org/10.5281/zenodo.24284040
+
+Article 2 and FCP-PILOT-01 introduce candidate architectural material for public review. Their publication does not itself revise the Working Definition, create a released FCP, or make their proposals Draft or Released Guidance.
+
 ## Purpose of this repository
 
 The repository exists to make EKR development visible, challengeable and evidence-driven while keeping the status and role of every contribution explicit.
@@ -61,7 +71,11 @@ Status belongs to artefacts and decisions, not to people, popularity or contribu
 
 ## Current development path
 
-The Working Definition V0.1 is published. An initial [EKR Architectural Guidance Working Draft V0.1](guidance/ARCHITECTURAL-GUIDANCE.md) is live in the repository with **Draft Guidance** status and is open to challenge and improvement. The near-term sequence is described in [ROADMAP.md](ROADMAP.md).
+The Working Definition V0.1 is published and remains canonical. An initial [EKR Architectural Guidance Working Draft V0.1](guidance/ARCHITECTURAL-GUIDANCE.md) is live in the repository with **Draft Guidance** status and is open to challenge and improvement.
+
+Article 2 and FCP-PILOT-01 now provide new candidate research material for that development cycle. Their transfer into Guidance is tracked through the proposal process rather than assumed from publication.
+
+The near-term sequence is described in [ROADMAP.md](ROADMAP.md).
 
 The protected `main` branch carries the current public development state. Draft/Released/Canonical are artefact statuses rather than branch names: versioned Guidance releases are fixed by Git tags and GitHub Releases, while new draft work continues through pull requests to `main`.
 
