@@ -55,3 +55,26 @@ Released versions will be preserved through version-specific Git tags and GitHub
 Replaced the launch-stage development brief with the living **EKR Architectural Guidance — Working Draft V0.1**.
 
 The initial seed remains part of the project history, but it is no longer treated as a separate operational maturity state. The working draft is the document that will now be progressively enriched through Discussions, Issues, evidence, implementation experience and reviewed pull requests until a release decision is made.
+
+## 16 November 2026 — Article 2 / FCP-PILOT research transfer
+
+**Status: Draft Guidance development**
+
+Integrated candidate architectural material from:
+
+- Jean Vieille, *Distributed Knowledge Representations, Shared Foundation and Semantic Interfaces*, Version 1.0. DOI: https://doi.org/10.5281/zenodo.24284087
+- Jean Vieille, *FCP-PILOT-01: Candidate Foundation Conformance Profile — Investigation V0.4*. DOI: https://doi.org/10.5281/zenodo.24284040
+- [Architectural Proposal Issue #21](https://github.com/jvieille/ekr/issues/21)
+- [Architectural Guidance Transfer Note](../proposals/ARCHITECTURAL-GUIDANCE-TRANSFER-2026-11-16.md)
+
+The working draft now includes:
+
+- FCP / TBP / TEP / semantic-interface distinctions as candidate architectural vocabulary;
+- F1–F4 as an experimental operationalisation of the Working Definition’s four shared-foundation dimensions, without claiming sufficiency or canonical status;
+- explicit distinction between situated assertions, externally governed mapping specifications and semantic mediation;
+- candidate A/B/C participation arrangements and orthogonal coverage states;
+- stronger separation among conformance, semantic fidelity, fitness, authorisation and achieved interoperability;
+- continuity considerations across source or exposure-platform replacement;
+- additional open questions on FCP sufficiency, independent assessment, mapping-process governance, DSP commitments and continuity.
+
+The research status remains explicit: FCP-PILOT-01 V0.4 does not report completed independent E2 implementation tests, and this Draft Guidance update does not create a released FCP, certification scheme or canonical EKR change.
