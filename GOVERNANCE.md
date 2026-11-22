@@ -39,32 +39,39 @@ Canonical-impact changes follow a separate governed path. Under the current gove
 
 GitHub labels, milestones, branches and open/closed states support workflow and traceability. They are **not additional EKR statuses**.
 
-## 4. Normal public progression
+## 4. Contribution routes and public progression
 
-The normal progression is:
+EKR does not require every contributor to follow a full Discussion → Issue → PR sequence.
 
-**Discussion (optional) → structured Issue → triage → PR where a repository change is needed → Draft Guidance / repository update → release review → Released Guidance**
+Three contribution routes are supported:
 
-This is not an automatic promotion pipeline.
+1. **Quick contribution — Discussion.** A question, reference, error report, small clarification or early idea may be handled directly in Discussion. If durable tracking or a repository change is needed, the maintainer creates or links the necessary Issue or PR.
+2. **Structured contribution — Issue.** A concrete analysis, proposal, challenge, evidence item, implementation experience or reader aid may be submitted through the structured contribution form. The contributor is not required to create a branch or PR.
+3. **Direct technical contribution — PR.** A contributor who wants to edit repository files directly may submit a pull request.
+
+The maintainer absorbs the repository-integration work when a contributor does not choose the technical path.
 
 ```mermaid
 flowchart LR
-    D["Discussion<br/>optional"] --> I[Structured Issue]
-    X[Direct structured contribution] --> I
-    I --> T[Maintainer triage]
-    T --> P["Pull request<br/>when repository content must change"]
-    T --> N["Disposition without PR<br/>when no repository change is needed"]
-    P --> M[Maintainer review and merge]
+    D["Quick Discussion"] --> T[Maintainer triage]
+    I["Structured contribution Issue"] --> T
+    T --> N["Disposition without repository change"]
+    T --> P["Maintainer or contributor PR<br/>when repository content must change"]
+    X["Optional direct PR"] --> R[Maintainer review]
+    P --> R
+    R --> M[Maintainer merge]
     M --> S["Current repository state<br/>Draft Guidance where applicable"]
-    S --> R[Explicit release review]
-    R --> G["Released Guidance<br/>versioned tag + GitHub Release"]
+    S --> G["Explicit release review<br/>when a Guidance release is prepared"]
 ```
 
-- A contributor may open a structured Issue directly when prior Discussion is unnecessary.
+The stages are deliberately not automatic promotions.
+
 - A Discussion may end without an Issue or decision.
+- A maintainer creates an Issue only when tracked evaluation is useful.
 - An Issue may be accepted for investigation or work without accepting its conclusion.
 - Not every Issue requires a PR.
-- A merged pull request may update Draft Guidance or a repository artefact without changing a canonical anchor.
+- A PR may link directly to an originating Discussion when no intermediate Issue is needed.
+- A merged pull request may update Draft Guidance or another repository artefact without changing a canonical anchor.
 - A Released Guidance document does not become Canonical merely by being released.
 - Canonical change follows the separate escalation path described below.
 
@@ -85,57 +92,69 @@ The table below states the **current** decision authorities. These may evolve th
 
 ## 6. Issue lifecycle and disposition
 
-Structured Issues are the normal tracking objects for contributions that need evaluation or action.
+Structured Issues are used when a contribution needs durable evaluation, coordination or disposition.
 
-New Issue Forms apply the `triage` label. Initial triage may result in a request for clarification or evidence, assignment to a release milestone, deferral, closure with rationale, or canonical-impact escalation.
+The public Issue chooser intentionally provides a single structured contribution form rather than requiring contributors to select a governance-specific form. The contributor identifies the nature of the contribution at a high level; the maintainer performs repository classification during triage.
 
-The Issue should remain the public record of the question and its disposition even when a PR implements the resulting change. A closed Issue does not necessarily mean that the contributor's proposed conclusion was accepted; the closing comment should make the disposition clear when the reason is not obvious from the linked PR.
+Initial triage may result in:
 
-If an Issue originates in a Discussion, the relationship should remain visible by cross-reference. When practical, maintainers should use GitHub's discussion-to-issue route or add links manually in both directions.
+- a request for clarification or evidence;
+- classification with the appropriate repository labels;
+- assignment to a release milestone where relevant;
+- preparation of a linked pull request when repository content should change;
+- deferral;
+- closure with a short public rationale;
+- canonical-impact escalation.
+
+An Issue remains the public record of the question and its disposition when one is used. If it originates in a Discussion, that relationship should remain visible. If a contribution can be resolved directly in Discussion, creating a separate Issue solely for procedural completeness is not required.
 
 ## 7. Pull requests, branches and draft integration
 
-For substantive repository changes, a pull request should normally link the Issue it addresses.
+Pull requests are the controlled mechanism by which repository file changes enter the protected main branch. They are **not a required contribution format for non-technical contributors**.
 
-The normal target branch is `main`. Ordinary contributors normally work on a branch in their own fork and open a pull request against `jvieille/ekr:main` (using GitHub's cross-fork comparison where needed). Maintainers may work on a non-`main` branch in the repository or in a fork, but the change still enters `main` through a pull request.
+When an accepted Discussion or Issue requires a repository change, the maintainer may prepare the implementation PR and link it back to the source contribution. A contributor who is comfortable editing files directly may instead submit the PR themselves.
 
-`main` is the protected **current public development state** of the repository. It is not synonymous with **Released Guidance**, and a permanent `draft` branch is not required. Draft/Released/Canonical are artefact statuses, not branch names.
+External contributors who choose the direct-edit path normally work in a branch of their own fork and open a pull request against jvieille/ekr:main. Maintainers may work in a non-main branch in the repository or in a fork.
 
-GitHub workflow states such as **Draft pull request**, **Open**, **Merged** or **Closed** are repository workflow states. They must not be confused with EKR artefact statuses such as **Draft Guidance** or **Released Guidance**.
+main is the protected **current public development state** of the repository. It is not synonymous with **Released Guidance**, and a permanent draft branch is not required. Draft/Released/Canonical are artefact statuses, not branch names.
 
-When a PR fully resolves an Issue, the preferred convention is `Closes #<issue>` so GitHub closes the Issue when the PR is merged into the default branch. When the PR is only one step in a larger Issue, use a normal cross-reference such as `Relates to #<issue>` and leave the Issue open.
+GitHub workflow states such as Draft pull request, Open, Merged or Closed are repository workflow states. They must not be confused with EKR artefact statuses such as Draft Guidance or Released Guidance.
 
-Small housekeeping or typographical changes may be merged without a prior Issue when their scope is self-evident and they do not alter conceptual meaning or artefact status.
+A substantive PR should link the source Issue or Discussion where one exists. Small self-contained corrections may be proposed directly.
 
-Where branch protection requires pull-request review conversations to be resolved before merge, a published unresolved review conversation is a merge blocker. Contributors address such feedback through the existing review thread and, when required, by updating the PR branch. Starting a separate review on one's own PR is not required for disposition of maintainer feedback.
+Maintainer review should be proportionate to the change. Inline review conversations may be used when line-level context is useful, but contributors are not required to master GitHub's review-state mechanics in order to contribute scientifically. The maintainer is responsible for ensuring substantive review points are addressed before merge.
 
-A maintainer merge into `main` is a governed acceptance of that change into the current repository state. If it changes Draft Guidance, it changes the **draft**, not the release status. Merge authority therefore carries repository decision authority only within the scope assigned to the maintainer under this governance; it does not by itself authorise a Guidance release, a new material public claim or a canonical change.
+A maintainer merge into main is a governed acceptance of that change into the current repository state. If it changes Draft Guidance, it changes the draft, not the release status. Merge authority therefore carries repository decision authority only within the scope assigned to the maintainer under this governance; it does not by itself authorise a Guidance release, a new material public claim or a canonical change.
 
 ## 8. Release planning and traceability
 
 Milestones may be used to group Issues and PRs intended for a particular Guidance release. A milestone expresses intended release scope and provides progress visibility; it is not a release decision and does not change artefact status.
 
-The intended traceability chain is:
+Traceability is preserved without requiring every contribution to create every GitHub object.
 
-**Released Guidance → Git tag / GitHub Release → merged PRs → linked Issues → originating Discussions, where applicable**
+The intended release chain is:
+
+**Released Guidance → Git tag / GitHub Release → merged PRs → source contribution**
+
+A source contribution may be a structured Issue or a Discussion. Where an Issue itself originated in a Discussion, the Discussion link should be preserved.
 
 ```mermaid
 flowchart LR
     R[Released Guidance V0.x] --> T["Version-specific Git tag<br/>and GitHub Release"]
     T --> P[Merged pull requests]
-    P --> I[Linked Issues]
-    I --> D["Originating Discussions<br/>where applicable"]
+    P --> S["Source Issue or Discussion"]
+    S --> D["Earlier Discussion<br/>where applicable"]
 ```
 
 To preserve that chain:
 
 - release-targeted Issues and PRs should be associated with the relevant milestone where practical;
-- substantive PRs should link the Issues they implement;
+- substantive PRs should link the Issue or Discussion that motivated the change;
 - Issues should link originating Discussions when one exists;
 - Guidance release notes should identify the merged PRs included in the released version;
 - the Guidance changelog should record each versioned release and point to the corresponding release record.
 
-The initial public seed predates this contribution-lifecycle convention; subsequent substantive changes should follow it.
+The absence of an intermediate Issue does not weaken traceability when the PR links directly to the originating Discussion and the maintainer records the disposition clearly.
 
 ## 9. Canonical-impact escalation
 
