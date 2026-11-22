@@ -35,12 +35,10 @@ The repository exists to make EKR development visible, challengeable and evidenc
 
 It provides routes to:
 
-- discuss architectural questions and alternatives;
-- submit structured proposals and counterexamples;
-- contribute implementation experience and cases;
-- submit references and evidence;
-- contribute worked examples;
-- contribute non-canonical reader aids tied to published EKR sources;
+- ask questions, flag errors, suggest references or propose small clarifications without learning Git;
+- submit structured scientific and practitioner contributions for maintainer review;
+- contribute worked examples and non-canonical reader aids;
+- optionally propose direct file changes through pull requests;
 - develop and review Draft Guidance;
 - publish versioned guidance when it reaches an accepted maturity;
 - record public decisions that materially affect canonical EKR propositions.
@@ -62,12 +60,30 @@ Status belongs to artefacts and decisions, not to people, popularity or contribu
 
 ## How to participate
 
-- **Discuss** broad questions, alternatives and early challenges in [GitHub Discussions](https://github.com/jvieille/ekr/discussions). Discussion is optional when a contribution is already concrete.
-- **Submit** structured proposals, counterexamples, implementation experience, references/evidence, or reader-aid/documentation clarifications through the [structured Issue forms](https://github.com/jvieille/ekr/issues/new/choose).
-- **Contribute reader aids** only as explanatory material tied to an existing published EKR source; they must not introduce new requirements, recommendations or implementation Guidance. See [`working-definition/reader-aids/`](working-definition/reader-aids/).
-- **Propose precise text changes** through pull requests, normally linked to the Issue they implement.
-- **Follow the contribution lifecycle** in [CONTRIBUTING.md](CONTRIBUTING.md), including the traceability path from Discussions to Issues, PRs and versioned releases.
-- Read [GOVERNANCE.md](GOVERNANCE.md) and the public [Canonicality Policy](governance/CANONICAL-POLICY.md) to understand decision rights and status transitions.
+You do **not** need to know Git, create a branch or open a pull request to contribute to EKR.
+
+### Open an Issue
+
+Use the [EKR contribution form](https://github.com/jvieille/ekr/issues/new/choose) for any useful contribution, including:
+
+- a question;
+- an error or ambiguity;
+- a suggested reference;
+- an analysis or comparison;
+- a counterexample or challenge;
+- implementation experience;
+- a clarification or proposed development;
+- a reader aid or documentation improvement.
+
+Write the contribution in your own words and add links, sources or context when useful. **You do not need to classify it.** The maintainer will handle labels, routing, release targeting, canonical-impact screening and any repository-integration work.
+
+### Direct edit — optional technical path
+
+If you are comfortable with GitHub and want to edit repository files directly, you may open a pull request. This is optional and carries no greater scientific authority than an Issue contribution.
+
+GitHub Discussions remain available for broader conversations, but they are not required as part of the EKR contribution process.
+
+For detailed contribution rules, see [CONTRIBUTING.md](CONTRIBUTING.md). Repository decision rights remain defined in [GOVERNANCE.md](GOVERNANCE.md) and the public [Canonicality Policy](governance/CANONICAL-POLICY.md).
 
 ## Current development path
 

@@ -1,0 +1,37 @@
+name: Contribute to EKR
+description: Ask a question, suggest a reference, report an issue, share analysis or experience, or propose an improvement. No Git knowledge required.
+title: "[Contribution] "
+labels:
+  - "triage"
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for contributing to EKR.
+
+        You do **not** need to classify your contribution, create a branch or open a pull request. Describe what you would like EKR to consider; the maintainer will handle labels, routing and any repository integration.
+
+  - type: textarea
+    id: contribution
+    attributes:
+      label: What would you like EKR to consider?
+      description: Ask a question, report an error or ambiguity, suggest a reference, share analysis or experience, challenge a position, or propose an improvement.
+      placeholder: Write the contribution in your own words.
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Sources, links, context or limitations
+      description: Optional. Add anything that helps understand or evaluate the contribution.
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: declarations
+    attributes:
+      label: Public contribution
+      options:
+        - label: I am authorised to disclose the submitted material publicly and understand that submission does not by itself confer EKR status.
+          required: true

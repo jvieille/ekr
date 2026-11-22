@@ -2,287 +2,146 @@
 
 Thank you for helping challenge, test and improve Enterprise Knowledge Representation and its Architectural Guidance.
 
-EKR development is intentionally open to questions, counterexamples, evidence, implementation experience, worked examples, reader aids and alternative approaches. Contribution is open; **publication and canonical authority remain governed**.
+**You do not need to know Git or open a pull request to contribute.** The normal contribution path is a single GitHub Issue. The maintainer takes responsibility for classification and repository integration.
 
-The workflow is designed to be lightweight: start at the level that matches the maturity of the contribution, and add structure only when the work needs to be tracked or changed.
+Contribution is open; **publication and canonical authority remain governed**.
 
-## 1. Choose the natural starting point
+## 1. Open an Issue
 
-### GitHub Discussions
+Use the [EKR contribution form](https://github.com/jvieille/ekr/issues/new/choose) for any contribution you want EKR to consider.
 
-Use [GitHub Discussions](https://github.com/jvieille/ekr/discussions) for:
+This includes questions, corrections, references, analyses, comparisons, architectural proposals, counterexamples, implementation experience, reader aids and documentation clarifications.
 
-- broad architectural questions;
-- conceptual debate and alternatives;
-- early challenges or counterexamples;
-- questions about existing EKR material;
-- exploration of references and evidence before a structured submission;
-- early exploration of a worked example before it is ready as a durable artefact;
-- early discussion of a possible reader aid when its scope or source boundary is not yet clear.
+You do **not** need to decide which category, status, label or repository artefact your contribution belongs to.
 
-A Discussion has **Discussion** status and implies no decision or acceptance.
+A useful contribution can be very simple:
 
-Starting with a Discussion is optional. If a contribution is already concrete enough to be evaluated or tracked, open an Issue directly.
+- explain what you noticed, question or propose;
+- add a source, link or example when useful;
+- mention important context or limitations if they matter.
 
-### Issues
+The maintainer handles labels, classification, release targeting, canonical-impact screening and any required repository change.
 
-Use the [structured Issue forms](https://github.com/jvieille/ekr/issues/new/choose) for material that is ready for evaluation:
+## 2. What happens after you contribute
 
-- **Architectural proposal** — a proposed requirement, distinction, pattern or decision question;
-- **Counterexample / challenge** — a case that may falsify, overconstrain or expose ambiguity in current framing or Draft Guidance;
-- **Implementation experience / case** — observed experience from a system, architecture, standard, project or pilot;
-- **Reference / evidence** — a primary source, standard, paper, specification or other relevant evidence;
-- **Reader aid / documentation clarification** — a glossary, reading guide, FAQ, terminology map, cross-reference or similar explanatory aid tied to an existing published EKR source.
+The maintainer may:
 
-A reader aid must remain explanatory. Do not use the Reader aid form to propose new architectural requirements, recommendations, implementation patterns or design Guidance; use the applicable architectural proposal or Guidance workflow instead.
+- answer or disposition the Issue without changing repository files;
+- ask for clarification or evidence;
+- add labels or a release milestone;
+- prepare a pull request implementing an accepted clarification or change;
+- invite the contributor to review the resulting interpretation or text when useful;
+- escalate a potential canonical-impact question through the separate canonicality process.
 
-A substantial worked or explanatory example may also be tracked through an Issue when it raises architectural questions or needs coordinated review. A concrete example whose purpose, source basis and scope are already clear may instead arrive directly as a pull request to `examples/`.
+The Issue remains the public record of the contribution and its disposition.
 
-Opening or triaging an Issue does not mean its proposed conclusion has been accepted.
+A contributor does not need to follow the technical integration steps unless they want to.
 
-The forms are intentionally short. Contributors should focus on the substance of the contribution; the maintainer is responsible for repository classification, release targeting and canonical-impact triage.
+## 3. Direct edit — optional pull request
 
-If an Issue grows out of a Discussion, include the Discussion link. A maintainer may also use GitHub's **Create issue from discussion** action and add a cross-reference back to the Issue so the origin remains visible.
+Contributors who are comfortable with GitHub may propose a precise repository change directly by pull request.
 
-### Pull requests
+For an external contributor, the usual technical path is:
 
-Use a pull request for a precise change to repository text or artefacts. The normal target is the protected `main` branch.
+1. fork the EKR repository;
+2. create a branch;
+3. commit the proposed change;
+4. open a pull request to the protected `main` branch.
 
-If you are an ordinary external contributor, the normal GitHub path is:
+A direct PR should link the relevant Issue when one exists. A small self-contained technical or editorial correction may be proposed directly without creating a separate Issue.
 
-1. fork `jvieille/ekr` to your own account;
-2. create a branch in your fork;
-3. commit the proposed change there;
-4. open a pull request from that fork branch to `jvieille/ekr:main` (use **Compare across forks** where needed).
+This path is optional. It does not carry more scientific authority than an Issue contribution.
 
-Maintainers may instead use a non-`main` branch in the repository, but they also submit changes through a pull request. Direct development commits to `main` are not the normal contribution path.
+## 4. Scientific and evidence expectations
 
-```mermaid
-flowchart LR
-    F["Contributor fork<br/>feature branch"] --> PR["Pull request"]
-    M["Maintainer<br/>non-main branch"] --> PR
-    PR --> U["jvieille/ekr<br/>protected main"]
-```
+Please distinguish clearly, where relevant, between:
 
-For substantive changes, a PR should normally be linked to an Issue. Use:
+- observation or implementation experience;
+- interpretation;
+- proposed architectural position;
+- primary or authoritative reference;
+- contributor-created illustrative extension;
+- limitation or unresolved question.
 
-- `Closes #123` when the PR fully resolves the Issue and should close it when merged into `main`;
-- `Relates to #123` when the PR contributes to the Issue but does not resolve it completely.
-
-A new reader aid should normally begin with a **Reader aid / documentation clarification** Issue and then be submitted through a linked pull request. Small corrections to an existing reader aid may be submitted directly by PR when their scope is self-evident and they do not change the interpretation boundary.
-
-A self-contained worked example may be submitted without a prior Issue when its source basis, intended purpose and non-normative status are explicit. A small housekeeping or typographical change may also be submitted without a prior Issue; state that explicitly in the PR description.
-
-A merged PR may change Draft Guidance or repository material. It does **not** automatically change a canonical EKR anchor or make Draft Guidance into Released Guidance.
-
-## 2. Evidence expectations
-
-Please distinguish clearly between:
-
-- an observation or implementation experience;
-- an interpretation;
-- a proposed architectural position;
-- a primary or authoritative reference;
-- a contributor-created illustrative extension;
-- a plain-language reader aid tied to published EKR source material;
-- a limitation or unresolved question.
-
-For references and evidence, provide enough information to assess:
-
-- source/authoritative body;
-- title and version/date where relevant;
-- maturity or publication status;
-- the EKR or Guidance question it affects;
-- the specific relevance you claim;
-- known limitations or scope conditions.
+For references and evidence, provide enough information to identify the source and understand the claimed relevance. Prefer primary standards, specifications, peer-reviewed research, official project documentation or sufficiently described implementation evidence where available.
 
 Existing standards, platforms, ontologies, information models and architectural approaches should be assessed by the responsibilities they actually fulfil. Contributions should not assume that EKR is a replacement for them.
 
-## 3. Counterexamples are welcome
+Counterexamples are explicitly welcome.
 
-A useful challenge may show that a current distinction is ambiguous, too broad, too narrow, too costly, insufficiently governed or already satisfied by an established approach.
+## 5. Worked examples, reader aids and implementation experience
 
-Please provide enough context for others to understand the boundary conditions. A strong counterexample is more useful than a generic statement of disagreement.
+Material in `examples/` has **Example** status unless deliberately incorporated through another governed process. It is non-normative.
 
-## 4. Worked examples, reader aids and implementation experience
+Reader aids under `working-definition/reader-aids/` are explanatory material tied to an identified published EKR source. They must not silently introduce new EKR requirements, recommendations, architectural positions or implementation guidance.
 
-Different non-canonical contribution types serve different purposes and should not be confused with Architectural Guidance.
+Implementation experience should state enough context, constraints and limitations to understand what was observed and how broadly it may apply.
 
-### 4.1 Worked or explanatory example
+## 6. Status and governance boundary
 
-Material in `examples/` enters the repository with **Example** status unless explicitly promoted through another governed process. It is non-normative and does not make a technology, product or architecture an EKR reference implementation.
+The repository uses these public statuses:
 
-A worked example starts from published EKR concepts and makes them concrete through a deliberately bounded scenario, object, process or question. It may be pedagogical, exploratory or designed to test whether EKR distinctions and Draft Guidance can be applied consistently.
+**Canonical, Released Guidance, Draft Guidance, Proposal, Example, Discussion.**
 
-A worked example should identify:
+A contribution does not acquire EKR authority through popularity, contributor effort, Issue acceptance or merge alone.
 
-- the EKR concepts or Guidance questions it illustrates or tests;
-- the context and intended purpose;
-- assumptions and simplifications;
-- the published EKR material on which it is based;
-- any contributor-created extension beyond that source material;
-- limitations and open questions;
-- contributor and source attribution.
-
-Use [`examples/EXAMPLE-TEMPLATE.md`](examples/EXAMPLE-TEMPLATE.md) as a lightweight starting point. A prior Issue is recommended when the example raises a substantive architectural question or needs coordinated investigation, but a mature self-contained example may be proposed directly by pull request.
-
-### 4.2 Reader aid
-
-Material under `working-definition/reader-aids/` is contributor-authored explanatory repository material tied to the canonical Working Definition or another specifically identified published source.
-
-A reader aid helps readers **understand, navigate or interpret the source it explains**. It must not introduce new EKR requirements, recommendations, architectural positions or implementation guidance. If material develops recommendations, design rules, architectural decisions or implementation patterns that remain meaningful independently of the source being explained, it belongs in Architectural Guidance or another appropriate repository path.
-
-Typical reader aids include glossaries, reading guides, FAQs, terminology or concept maps, and cross-reference/navigation aids.
-
-A reader aid should:
-
-- identify its author;
-- identify the published source it explains;
-- state clearly that it is non-canonical;
-- distinguish plain-language explanation from canonical wording;
-- keep substantive statements traceable to that source, except for clearly identified pedagogical explanations that do not extend its meaning;
-- avoid silently changing EKR boundaries.
-
-A reader aid is **not a separate EKR artefact status**. Publication or merge does not make it Canonical, Released Guidance, Draft Guidance or normative.
-
-A useful boundary test is: **if a statement would still function as an independent EKR recommendation after removing the source document from view, it probably does not belong in a reader aid.**
-
-See [`working-definition/reader-aids/README.md`](working-definition/reader-aids/README.md) for the directory-specific rules.
-
-### 4.3 Implementation experience / case
-
-An implementation case reports observed experience from an actual system, architecture, standard, project or pilot. State the context, objectives, constraints, observed outcome and limitations. Distinguish observation from interpretation, and avoid generalising from a single case without evidence.
-
-Implementation experience should normally enter through the [Implementation experience / case Issue form](https://github.com/jvieille/ekr/issues/new/choose) before a durable example artefact is added to `examples/`.
-
-### 4.4 What merge means
-
-Merge means only that the material has been accepted into the repository in its declared contribution role. It does not make an example normative or canonical, make a reader aid Guidance, establish a reference implementation, or alter a canonical anchor.
-
-If review of an example or reader aid suggests that Draft Guidance or a canonical EKR proposition should change, track that question separately through the applicable Issue and governance path rather than implying the change through the artefact itself.
-
-## 5. Public scope, security and intellectual-property boundary
-
-Only contribute material that you are authorised to disclose publicly.
-
-Do **not** submit confidential, classified, export-controlled, proprietary, personal-data or third-party material that you do not have the right to publish. Do not use the repository to disclose unpublished implementation mechanisms or other material that has not been authorised for public release under the applicable publication, protection, security or intellectual-property process.
-
-If a useful contribution depends on information that cannot be disclosed, describe the public architectural question without exposing the protected material.
-
-## 6. Status and canonical impact
-
-The repository uses these public statuses: **Canonical, Released Guidance, Draft Guidance, Proposal, Example, Discussion**.
-
-A reader aid is a document type, not an additional EKR status.
-
-A contribution does not acquire EKR authority through popularity, acceptance for investigation or merge alone. If review shows that a proposal would materially affect a canonical EKR distinction, material public claim, current public scope or publication boundary, or canonical anchor, the maintainer marks it for escalation under the public [Canonicality Policy](governance/CANONICAL-POLICY.md).
+A maintainer may accept reviewed material into the repository within the authority defined in [GOVERNANCE.md](GOVERNANCE.md). If a contribution would materially affect a canonical EKR distinction, material public claim, public-scope boundary or canonical anchor, it is escalated under the public [Canonicality Policy](governance/CANONICAL-POLICY.md).
 
 Contributors are not expected to determine canonical impact themselves.
 
-## 7. Contribution lifecycle and traceability
+## 7. Traceability without unnecessary workflow
 
-The normal workflow is:
+The normal path is:
 
-**Discussion (optional) → structured Issue → triage → PR where a repository change is needed → Draft Guidance / repository update → release review → versioned release**
+**Issue → maintainer triage → PR when repository content must change → maintainer review and merge**
 
-A new reader aid normally follows the shorter repository path **Discussion (optional) → Reader aid Issue → PR → non-canonical reader aid**. It does not enter the Guidance release path unless it separately raises a Guidance question.
+A direct technical PR may enter at the PR stage.
 
-A self-contained worked example may use the shorter path **Discussion (optional) → PR → Example**, provided its purpose, source basis, attribution and limitations are explicit. This shorter path does not bypass canonical-impact review if the example exposes a canonical question.
+For Guidance work, a merged PR updates the current Draft Guidance; it does not by itself create Released Guidance or alter a canonical anchor.
 
-```mermaid
-flowchart LR
-    D["Discussion<br/>optional"] --> I[Structured Issue]
-    X[Direct Issue] --> I
-    I --> T[Maintainer triage]
-    T --> P[Contributor or maintainer branch]
-    P --> PR[Pull request to main]
-    PR --> M[Maintainer merge]
-    M --> DS["Current public<br/>Draft state"]
-    DS --> RR[Explicit release review]
-    RR --> REL[Versioned Released Guidance]
-```
+The repository preserves links between an Issue and any resulting PR so that the contribution and its disposition remain traceable.
 
-The stages are deliberately not automatic promotions.
+GitHub Discussions remain available for broader conversation, but they are not a required stage in the contribution process.
 
-### 7.1 Discussion to Issue
+## 8. Pull-request review for direct editors
 
-A Discussion may remain exploratory and end without an Issue. When it becomes concrete enough to track, a structured Issue is created or linked.
+Pull requests are repository integration tools, not a required scientific contribution format.
 
-Where a Discussion exists, the Issue should retain a link to it, and the Discussion should point to the tracking Issue when practical.
+For direct-edit PRs:
 
-### 7.2 Issue triage
+- link the source Issue when one exists;
+- keep the change focused;
+- state important assumptions or limitations;
+- use ordinary PRs when the change is ready for review;
+- use GitHub Draft PRs only when the file change itself is genuinely unfinished.
 
-New structured Issues receive the `triage` label. The maintainer reviews the Issue and then removes `triage` when the initial classification is complete.
+Maintainers should prefer concise review. Inline review threads are useful when line-level context matters, but they should not be used merely to reproduce a general review conversation.
 
-Possible outcomes include:
+The maintainer is responsible for deciding when review points have been adequately addressed before merge.
 
-- keep the Issue open for clarification or further evidence;
-- accept it for work and, when relevant, assign it to a release milestone;
-- defer it for later consideration;
-- close it with a short public rationale when no further work is planned;
-- add `canonical-impact` and route it through the separate canonicality process when required.
+## 9. Notification and communication discipline
 
-Acceptance for work means only that the question is worth acting on; it does not make the proposed conclusion an accepted EKR position.
+GitHub controls individual notification preferences, so the repository cannot eliminate all platform-generated notifications. EKR can avoid creating unnecessary events.
 
-### 7.3 Issue to PR
+Preferred practice:
 
-When repository text or another versioned artefact must change, the PR links the Issue using the convention above. The Issue remains the primary record of the question and its disposition; the PR is the concrete implementation of the change.
+- use one clear maintainer triage or synthesis comment rather than a sequence of administrative comments;
+- create a PR only when repository content actually needs to change;
+- avoid Draft PRs for routine documentation changes that are already ready for review;
+- use inline review comments only when line-level context is useful;
+- mention contributors again only when their input is actually requested;
+- use **Announcements** for significant publications, releases or calls for contribution rather than routine repository activity.
 
-Not every Issue requires a PR. Evidence may be reviewed without changing Guidance, a challenge may confirm the existing text, and an implementation case may remain non-normative Example material.
+## 10. Public scope and intellectual-property boundary
 
-> **Terminology note:** a GitHub **Draft pull request** is simply a pull request that is still work in progress. It is unrelated to the EKR status **Draft Guidance**. An EKR artefact may have Draft Guidance status even when changes to it are submitted through ordinary, non-draft pull requests.
+Only contribute material that you are authorised to disclose publicly.
 
-### 7.4 Review conversations
+Do **not** submit confidential, classified, export-controlled, proprietary, personal-data or third-party material that you do not have the right to publish.
 
-Maintainers may use inline pull-request review conversations to request clarification or changes. When branch protection requires conversation resolution, a **published unresolved review conversation blocks merge** until it is resolved.
+If a useful contribution depends on information that cannot be disclosed, describe the public architectural question without exposing the protected material.
 
-For the author of the pull request:
-
-- do **not** start a separate review of your own pull request merely to answer maintainer feedback; comments started through GitHub's review workflow may remain pending/private until submitted and are not required for a normal response;
-- if an explanation is useful, reply directly in the maintainer's existing review conversation;
-- if a content change is requested, update the pull-request branch and push the change; the open PR updates automatically;
-- once the feedback has been addressed, resolve the existing conversation if GitHub permits it; otherwise the maintainer resolves it after verification.
-
-A resolved conversation records that the review point has been dispositioned. It does not by itself confer EKR status or replace the maintainer's final review of the PR.
-
-### 7.5 Draft state
-
-Merging a reviewed PR into `main` updates the current public development state. If the change affects Draft Guidance, it becomes part of the evolving **Draft Guidance**, not a release.
-
-`main` is therefore not a release-only branch, and the repository does not require a permanent `draft` branch. Draft/Released/Canonical are statuses of artefacts and versions. Short-lived contributor or maintainer branches carry proposed changes until they are reviewed and merged.
-
-### 7.6 Release targeting
-
-Milestones are used to group Issues and PRs that are intended to contribute to a particular Guidance release, for example **EKR Architectural Guidance V0.1**.
-
-A milestone is a planning and traceability device. Assignment to a milestone does not itself confer EKR status or guarantee inclusion in the release.
-
-### 7.7 Released Guidance
-
-A Guidance version becomes **Released Guidance** only after the explicit release review defined in [GOVERNANCE.md](GOVERNANCE.md).
-
-A release is an explicit governed action separate from an ordinary PR merge. When a release is approved, the repository should create:
-
-- a version-specific Git tag;
-- a GitHub Release based on that tag;
-- release notes identifying the material changes and merged PRs;
-- a corresponding entry in the Guidance `CHANGELOG.md`;
-- closure of the associated release milestone after its remaining items have been dispositioned.
-
-This provides a traceability chain from a release to its PRs, from PRs to Issues, and, where applicable, from Issues back to originating Discussions.
-
-### 7.8 Technical permissions and decision authority
-
-Repository write and merge access is reserved to maintainers authorised under [GOVERNANCE.md](GOVERNANCE.md). Technical GitHub permissions implement those governance rights; they do not independently create them.
-
-A maintainer merge into `main` accepts a change into the current repository state. It does **not** by itself authorise a Guidance release, create a new material public EKR claim or alter a canonical anchor. Those actions require the additional review or decision process applicable to their status.
-
-## 8. Licence of contributions
+## 11. Licence and collaboration
 
 By submitting original text or documentation for inclusion in this repository, you agree that accepted material may be published under the repository licence stated in [LICENSE](LICENSE), unless a different licence is explicitly identified and accepted before inclusion.
 
-Do not submit third-party content under incompatible terms.
-
-## 9. Collaboration
-
-Challenge ideas rigorously and contributors respectfully. Focus on architectural reasoning, evidence, explicit assumptions and boundary conditions. Product advocacy, personal attacks and unsupported claims do not help the EKR development process.
+Challenge ideas rigorously and contributors respectfully. Focus on architectural reasoning, evidence, explicit assumptions and boundary conditions.
