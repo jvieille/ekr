@@ -1,8 +1,8 @@
 ## Source contribution
 
-Link the Issue or Discussion that motivated this change when one exists.
+Link the Issue that motivated this change when one exists.
 
-For a small self-contained correction with no prior contribution, write: **Direct edit — no prior Issue or Discussion**.
+For a small self-contained correction with no prior Issue, write: **Direct edit — no prior Issue**.
 
 ## Summary
 
@@ -15,8 +15,8 @@ Briefly explain why the change is useful. Add evidence, assumptions or limitatio
 ## Checklist
 
 - [ ] The change is focused and ready for review.
-- [ ] I have linked the source Issue or Discussion when one exists.
+- [ ] I have linked the source Issue when one exists.
 - [ ] I am authorised to disclose the submitted material publicly.
 - [ ] I understand that merge accepts the change into the current repository state; it does not by itself create Released Guidance, a new canonical EKR claim or a canonical-anchor change.
 
-> Pull requests are an optional direct-edit path. Contributors may instead use Discussions or the Structured EKR contribution form and let the maintainer handle repository integration.
+> Pull requests are an optional direct-edit path. Contributors may instead open an Issue and let the maintainer handle repository integration.
