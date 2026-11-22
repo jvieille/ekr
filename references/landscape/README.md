@@ -30,12 +30,13 @@ The first release deliberately captures *candidate* references. Analysis, compar
 | `dimensions` | Preliminary research tags; **not evidence of implemented capabilities**. |
 | `priority` | Editorial/research interest: `high`, `normal`, or `watch`. |
 | `knowledge_state` | `identified`, `source_located`, `documented`, `analysed`, or `compared`. |
-| `source_state` | `publisher_page_checked`, `catalogue_page_checked`, `locator_unverified`, or `locator_pending`. |
+| `source_state` | `publisher_page_checked`, `catalogue_page_checked`, `vendor_page_checked`, `locator_unverified`, or `locator_pending`. |
 | `source_url` | Pointer to a source. A vendor landing page is **not** implementation evidence. |
 | `parent_id` | Optional parent family or amended specification; no implied equivalence. |
+| `relationships` | Optional typed relationships to other RL IDs, with a source URL supporting the relationship; distinguish vendor assertions from independently demonstrated dependencies. |
 | `note` | Scope caveat or research reminder; not a finding. |
 
-Dates, editions and specific claims must be independently checked before being treated as validated. A checked publisher catalogue page does not imply full-text standard review. A record must never be promoted to an EKR position merely because it appears in this register.
+Dates, editions and specific claims must be independently checked before being treated as validated. A checked publisher catalogue page does not imply full-text standard review. A checked vendor page only establishes what the vendor publicly states, **not** independent proof of product capabilities. A record must never be promoted to an EKR position merely because it appears in this register.
 
 ## Adding and maintaining references
 
