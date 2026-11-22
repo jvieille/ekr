@@ -189,7 +189,7 @@ When approved, the release is fixed to a version-specific Git tag and published 
 
 ```mermaid
 flowchart TD
-    B["Contributor fork/branch<br/>or maintainer branch"] --> P[Pull request to main]
+    B["Maintainer or contributor<br/>change branch"] --> P[Pull request to main]
     P --> M[Maintainer review and merge]
     M --> MAIN["main<br/>current public development state"]
     MAIN --> D[Draft Guidance evolves]
