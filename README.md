@@ -64,7 +64,7 @@ You do **not** need to know Git, create a branch or open a pull request to contr
 
 ### Open an Issue
 
-Use the [EKR contribution form](https://github.com/jvieille/ekr/issues/new/choose) for any useful contribution, including:
+Open a [GitHub Issue](https://github.com/jvieille/ekr/issues/new) for any useful contribution, including:
 
 - a question;
 - an error or ambiguity;
@@ -75,7 +75,7 @@ Use the [EKR contribution form](https://github.com/jvieille/ekr/issues/new/choos
 - a clarification or proposed development;
 - a reader aid or documentation improvement.
 
-Write the contribution in your own words and add links, sources or context when useful. **You do not need to classify it.** The maintainer will handle labels, routing, release targeting, canonical-impact screening and any repository-integration work.
+Write the contribution in your own words and add links, sources or context when useful. The standard GitHub link to `CONTRIBUTING.md` provides the contribution guidance. **You do not need to classify the Issue.** The maintainer will handle labels, routing, release targeting, canonical-impact screening and any repository-integration work.
 
 ### Direct edit — optional technical path
 
