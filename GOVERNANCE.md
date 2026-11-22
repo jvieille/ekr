@@ -89,7 +89,7 @@ The table below states the **current** decision authorities. These may evolve th
 
 Issues are the normal public entry point for EKR contributions.
 
-The public Issue chooser provides one contribution form. Contributors are not required to classify their contribution. The maintainer applies labels and repository routing during triage.
+Contributors open ordinary GitHub Issues. No specialised contribution form or contributor-side classification is required. The maintainer applies labels and repository routing during triage.
 
 Initial triage may result in:
 

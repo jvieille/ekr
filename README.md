@@ -64,7 +64,7 @@ You do **not** need to know Git, create a branch or open a pull request to contr
 
 ### Open an Issue
 
-Use the [EKR contribution form](https://github.com/jvieille/ekr/issues/new/choose) for any useful contribution, including:
+Open a [GitHub Issue](https://github.com/jvieille/ekr/issues/new) for any useful contribution, including:
 
 - a question;
 - an error or ambiguity;

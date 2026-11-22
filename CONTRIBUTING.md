@@ -8,11 +8,11 @@ Contribution is open; **publication and canonical authority remain governed**.
 
 ## 1. Open an Issue
 
-Use the [EKR contribution form](https://github.com/jvieille/ekr/issues/new/choose) for any contribution you want EKR to consider.
+Open a [GitHub Issue](https://github.com/jvieille/ekr/issues/new) for any contribution you want EKR to consider.
 
 This includes questions, corrections, references, analyses, comparisons, architectural proposals, counterexamples, implementation experience, reader aids and documentation clarifications.
 
-You do **not** need to decide which category, status, label or repository artefact your contribution belongs to.
+There is no specialised contribution form and no contributor-side classification. You do **not** need to decide which category, status, label or repository artefact your contribution belongs to.
 
 A useful contribution can be very simple:
 
