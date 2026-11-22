@@ -62,29 +62,28 @@ Status belongs to artefacts and decisions, not to people, popularity or contribu
 
 You do **not** need to know Git, create a branch or open a pull request to contribute to EKR.
 
-### 1. Quick contribution — a few minutes
+### Open an Issue
 
-Use [GitHub Discussions](https://github.com/jvieille/ekr/discussions) to:
+Use the [EKR contribution form](https://github.com/jvieille/ekr/issues/new/choose) for any useful contribution, including:
 
-- ask a question;
-- suggest a reference;
-- flag an error or ambiguity;
-- propose a small clarification;
-- share an early idea.
+- a question;
+- an error or ambiguity;
+- a suggested reference;
+- an analysis or comparison;
+- a counterexample or challenge;
+- implementation experience;
+- a clarification or proposed development;
+- a reader aid or documentation improvement.
 
-Write the contribution in ordinary language and add a link or source when useful. The maintainer will route it if more structure is needed.
+Write the contribution in your own words and add links, sources or context when useful. **You do not need to classify it.** The maintainer will handle labels, routing, release targeting, canonical-impact screening and any repository-integration work.
 
-### 2. Structured contribution — no branch or PR required
+### Direct edit — optional technical path
 
-For a concrete analysis, counterexample, architectural proposal, evidence item, implementation experience or reader aid, use the single [Structured EKR contribution form](https://github.com/jvieille/ekr/issues/new/choose).
+If you are comfortable with GitHub and want to edit repository files directly, you may open a pull request. This is optional and carries no greater scientific authority than an Issue contribution.
 
-The maintainer is responsible for classification, labels, release targeting, canonical-impact screening and—when repository files need to change—preparing or coordinating the linked pull request.
+GitHub Discussions remain available for broader conversations, but they are not required as part of the EKR contribution process.
 
-### 3. Direct edit — optional technical path
-
-If you are comfortable with GitHub and want to edit repository files directly, you may open a pull request. This is an **optional contributor path**, not a prerequisite for scientific or industrial participation.
-
-For the detailed contribution rules, see [CONTRIBUTING.md](CONTRIBUTING.md). Repository decision rights remain defined in [GOVERNANCE.md](GOVERNANCE.md) and the public [Canonicality Policy](governance/CANONICAL-POLICY.md).
+For detailed contribution rules, see [CONTRIBUTING.md](CONTRIBUTING.md). Repository decision rights remain defined in [GOVERNANCE.md](GOVERNANCE.md) and the public [Canonicality Policy](governance/CANONICAL-POLICY.md).
 
 ## Current development path
 
