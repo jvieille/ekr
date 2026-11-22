@@ -1,0 +1,72 @@
+name: Structured EKR contribution
+description: Submit an analysis, proposal, challenge, evidence item, implementation experience or reader aid. No branch or pull request required.
+title: "[Contribution] "
+labels:
+  - "triage"
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this form when your contribution is concrete enough to evaluate.
+
+        You do **not** need to decide its final repository classification, create a branch or open a pull request. The maintainer will handle routing, labels, release targeting and any repository-integration work.
+
+        For a quick question, reference suggestion, error report or early idea, GitHub Discussions is usually faster.
+
+  - type: dropdown
+    id: kind
+    attributes:
+      label: Contribution type
+      description: Choose the closest description. The maintainer may reclassify it during triage.
+      options:
+        - Analysis or comparison
+        - Architectural proposal
+        - Counterexample or challenge
+        - Reference or evidence
+        - Implementation experience
+        - Reader aid or documentation clarification
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: contribution
+    attributes:
+      label: What would you like EKR to consider?
+      description: Describe the contribution, question, observation or proposed change as clearly as practical.
+      placeholder: A concise explanation is enough to start.
+    validations:
+      required: true
+
+  - type: textarea
+    id: relevance
+    attributes:
+      label: Why is it relevant?
+      description: Briefly explain what EKR material, architectural question, publication or practical concern this affects.
+    validations:
+      required: true
+
+  - type: textarea
+    id: support
+    attributes:
+      label: Evidence, context, links or limitations
+      description: Optional. Add sources, examples, implementation context, alternatives, assumptions or known limitations.
+    validations:
+      required: false
+
+  - type: input
+    id: discussion
+    attributes:
+      label: Related Discussion
+      description: Optional. If this contribution grew out of a GitHub Discussion, paste its URL here.
+      placeholder: https://github.com/jvieille/ekr/discussions/...
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: declarations
+    attributes:
+      label: Public contribution
+      options:
+        - label: I am authorised to disclose the submitted material publicly and understand that submission does not by itself confer EKR status.
+          required: true
